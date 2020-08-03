@@ -1,0 +1,145 @@
+$white: var(--white);
+$light: var(--light);
+$lighter: var(--lighter);
+$main: var(--main);
+$dark: var(--dark);
+
+// :root {
+//   --white: rgb(7, 3, 22);
+//   --light: rgb(51, 19, 105);
+//   --lighter: rgb(0, 0, 0);
+//   --main: #b4c1e4;
+//   --dark: rgba(255, 255, 255, 0.856);
+// }
+:root {
+  --white: rgb(255, 255, 255);
+  --light: rgb(136, 235, 242);
+  --lighter: rgb(231, 237, 255);
+  --main: #0a6c75;
+  --dark: rgba(11, 5, 43, 0.856);
+  // transition: all .5s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  padding: .5rem;  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4 {
+  text-transform: capitalize;
+}
+
+button {
+  font-size: 2rem;
+  padding: 1.5rem .5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: $lighter;
+  color: $dark;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: .3s ease;
+}
+
+#root {
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-template-rows: 1fr 100fr 1fr;  
+  grid-template-columns: 100%;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  width: 100%;
+  background-color: $white;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.underline {
+  position: relative;
+  width: 5rem;
+  height: .3rem;
+  background-color: $dark;
+  margin: 0 auto 2rem auto;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 500px / 16px = 31.25em */
+@media (max-width: 31.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px $dark;
+  background: $lighter;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px $dark;
+  background: $main;
+  border-radius: 10px;
+
+  &:hover {
+    box-shadow: inset 0 0 6px $lighter;
+
+  }
+}

@@ -1,0 +1,21 @@
+@import "./global";
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 4rem;
+  color: $dark;
+
+  a {
+    transition: .2s ease-out;
+    margin-right: 1rem;
+    
+    &:hover {
+      color: $light;
+    }
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "./global";
+
+.form-container {
+  background-color: $lighter;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.form {
+  min-width: 40rem;
+  min-height: 40rem;
+  background-color: $white;
+  border: 1px black solid;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 15px 5px $dark;
+  padding: 1rem;
+  margin: 1rem 0;
+  position: relative;
+
+  h2 {
+    color: $main;
+  }
+
+  button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $main;
+    color: $lighter;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    &:hover {
+      background-color: $lighter;
+      color: $main;
+    }
+  }
+
+  input {
+    margin-bottom: 2.5rem;
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    outline: none;
+    background-color: $lighter;
+    color: $main;
+    
+    &:focus {
+      box-shadow: 0 0 15px 10px $lighter;
+      background-color: $white;
+    }
+  }
+}
+
+.submit-status {
+  color: $main;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+
+

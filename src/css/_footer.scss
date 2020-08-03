@@ -1,0 +1,11 @@
+@import "./global";
+
+.footer {
+  background-color: $lighter;
+  color: $dark;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}

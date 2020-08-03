@@ -1,0 +1,96 @@
+@import "./global";
+
+#hero {
+  background-color: $main;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  background-image: url("/img/hero_img.jpg");
+  background-size: cover;
+  background-position: right;
+  color: $lighter;
+
+  &::before {
+    content: "";
+    background: linear-gradient(to top, black, $dark, $main);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transition: opacity 3s ease;
+    transition-delay: 1s;
+  }
+
+  &::after {
+    content: "";
+    background-color: $dark;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+  }
+}
+
+#hero.banner::before {
+  opacity: 0;
+}
+
+.hero-header {
+  position: absolute;
+  top: 25%;
+  left: -100%;
+  font-size: 3rem;
+  transform: perspective(200px) rotateY(35deg);
+  transition: .5s ease;
+  transition-delay: .5s;
+  z-index: 2;
+}
+
+.hero-text {
+  position: absolute;
+  top: 45%;
+  left: 200%;
+  font-size: 3rem;
+  text-transform: capitalize;
+  transform: perspective(200px) rotateY(-35deg);
+  transition: .5s ease;
+  transition-delay: 1s;
+  z-index: 2;
+}
+
+.hero-my-img-container {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: .5s ease-in;
+  transition-delay: 1.5s;
+  z-index: 2;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+    transition: .5s ease;
+    transition-delay: 2s;
+  }
+}
+
+@media (max-width: 61.25em) {
+  .hero-my-img-container {
+    display: none;
+  }
+}

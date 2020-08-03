@@ -1,0 +1,122 @@
+@import "./global";
+
+.header {
+  width: 100%;
+  display: flex;
+  place-content: center;
+  position: relative;
+  background-color: $lighter;
+  top: 0;
+  left: 0;
+  z-index: 10;  
+}
+
+.header-container {
+  bottom: 100%;
+  width: 100%;
+  max-width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  i {
+    font-size: 2.5rem;
+  }
+}
+
+.theme-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $main;
+  font-size: 2.2rem;
+  margin-left: 1rem;
+}
+
+#theme {
+  width: 5rem;
+  height: 2.5rem;
+  background-color: $main;
+  border-radius: 5rem;
+  padding: .24rem;
+  margin: 0 .5rem;
+  display: flex;
+}
+
+.theme-ball {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: $white;  
+}
+
+.nav-items {
+  padding: 1rem 0;
+}
+
+.nav-date {
+  color: $dark;
+  font-weight: 600;
+}
+
+.navigation {
+  display: flex;
+
+  li {
+    margin: 0 2rem;
+    cursor: pointer;
+    position: relative;
+    color: $dark;
+    font-weight: 600;
+    letter-spacing: .15rem;
+    font-size: 2rem;
+
+    &:nth-last-child(1) {
+      margin-right: .5rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -20%;
+      height: .25rem;
+      width: 0;
+      opacity: 0;
+      background-color: $light;
+      transition: .3s ease;
+    }
+
+    &:hover {
+      color: $light;
+      
+      &::after {
+        left: 0;
+        right: 0;
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#burger {
+  display: none;
+}
+
+@media (max-width: 61.25em) {
+  .nav-list {
+    display: none;
+  }
+  
+    #burger {
+      display: initial;
+      margin-right: 1rem;
+      color: $main;
+      cursor: pointer;
+
+      &:hover {
+        color: $light;
+      }
+    }
+}
