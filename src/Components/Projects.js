@@ -3,15 +3,17 @@ import { data } from "../data/all";
 import Loading from "./Loading";
 
 const Projects = () => {
+  
+  // preload img
+  data.forEach(proj => {
+    const img = new Image();
+    img.src = proj.img
+  })
+
   const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState(data);
-
+  
   useEffect(() => {
-    // preload img
-    data.forEach(proj => {
-      const img = new Image();
-      img.src = proj.img
-    })
     // loading
     setTimeout(() => {
       setLoading(false);

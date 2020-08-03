@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 
 const Hero = () => {
 
+  const img = new Image();
+  img.src = "/img/profile_img.jpg"
+
   useEffect(() => {
     document.getElementById("hero").className = "banner";
     Object.assign(document.getElementById("hero-img-container").style, {
@@ -31,7 +34,7 @@ const Hero = () => {
         <p>web developer</p>
       </div>
       <div className="hero-my-img-container" id="hero-img-container">
-        <img src="/img/profile_img.jpg" alt="profile" id="hero-img"/>
+        <img src={img.src} alt="profile" id="hero-img"/>
       </div>
     </div>
   );
