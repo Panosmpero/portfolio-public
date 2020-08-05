@@ -5,7 +5,7 @@ import Loading from "./Loading";
 const Projects = () => {
 
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState(data);
 
   useEffect(() => {
@@ -27,6 +27,7 @@ const Projects = () => {
 
   return loading ? (<Loading />) : (
     <div className="projects">
+      <div className="preload-images"></div>
       <div className="projects-filters">
         <button onClick={() => filterProjects()}>all</button>
         <button onClick={() => filterProjects("frontend")}>frontend</button>
