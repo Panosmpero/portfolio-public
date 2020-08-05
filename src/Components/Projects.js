@@ -3,38 +3,48 @@ import { data } from "../data/all";
 import Loading from "./Loading";
 
 const Projects = () => {
-
-
   const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState(data);
 
   useEffect(() => {
-
-    setTimeout(() => {
+    const paths = projects.map(x => x.img)
+    const preloadImg = (path) => {
+      new Promise(res => {
+        const image = new Image()
+        image.onload = () => res({path, status: "ok"})
+        image.onerror = () => res({path, status: "error"})
+  
+        image.src = path
+      })
+  
       setLoading(false)
-    },500)
+    }
 
-  }, [])
+    const loadImg = paths => Promise.all(paths.map(preloadImg))
+    loadImg(paths)
+  }, [projects]);
+  
 
   const filterProjects = (filters) => {
-    const newProjects = filters === "frontend"
-      ? data.filter(project => project.frontend)
-      : filters === "backend"
-        ? data.filter(project => project.backend)
-        : data
-    setProjects(newProjects)
-  }
+    const newProjects =
+      filters === "frontend"
+        ? data.filter((project) => project.frontend)
+        : filters === "backend"
+        ? data.filter((project) => project.backend)
+        : data;
+    setProjects(newProjects);
+  };
 
-  return loading ? (<Loading />) : (
+  return loading ? (
+    <Loading />
+  ) : (
     <div className="projects">
-      <div className="preload-images"></div>
       <div className="projects-filters">
         <button onClick={() => filterProjects()}>all</button>
         <button onClick={() => filterProjects("frontend")}>frontend</button>
         <button onClick={() => filterProjects("backend")}>backend</button>
       </div>
       <div className="grid-container">
-
         {projects.map((project) => (
           <div className="card-container" key={`proj-${project.id}`}>
             <div className="card">
@@ -43,7 +53,7 @@ const Projects = () => {
                   <h2>{project.title}</h2>
                   <div className="underline"></div>
                 </div>
-                <img src={project.img} alt="project"/>
+                <img src={project.img} alt="project" />
               </div>
               <div className="side back">
                 <div className="back-container">
@@ -66,9 +76,9 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="card-git"
-                    ><span>{"<"} </span>
-                      <i className="fab fa-github"></i>{" "}
-                      <span> {"/>"}</span>
+                    >
+                      <span>{"<"} </span>
+                      <i className="fab fa-github"></i> <span> {"/>"}</span>
                     </a>
                   )}
                 </div>
@@ -76,7 +86,6 @@ const Projects = () => {
             </div>
           </div>
         ))}
-
       </div>
     </div>
   );
