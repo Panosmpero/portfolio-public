@@ -61,7 +61,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -204,7 +204,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -485,7 +485,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -741,7 +741,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -1109,7 +1109,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -1323,7 +1323,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -1490,7 +1490,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -1568,6 +1568,13 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   -webkit-box-shadow: inset 0 0 6px var(--lighter);
           box-shadow: inset 0 0 6px var(--lighter);
+}
+
+.preload-images {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  background: url("/img/amazon_clone.png"), url("/img/bar_chart.png"), url("/img/calculator.png"), url("/img/choropleth_map.png"), url("/img/drum_machine.png"), url("/img/e-commerce.png"), url("/img/enigma_machine.png"), url("/img/exercise_tracker.png"), url("/img/heatmap.png"), url("/img/issue_tracker.png"), url("/img/markdown.png"), url("/img/message_board.png"), url("/img/pomodoro.png"), url("/img/project_library.png"), url("/img/random_quote.png"), url("/img/scatter_plot.png"), url("/img/sorting_algo.png"), url("/img/stock_checker.png"), url("/img/treemap.png"), url("/img/units_converter.png");
 }
 
 .projects {
@@ -1862,7 +1869,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -2079,7 +2086,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -2316,7 +2323,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -2515,7 +2522,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;

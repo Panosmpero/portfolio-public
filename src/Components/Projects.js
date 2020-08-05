@@ -5,7 +5,7 @@ import Loading from "./Loading";
 const Projects = () => {
 
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [projects, setProjects] = useState(data);
 
   useEffect(() => {

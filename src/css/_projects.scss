@@ -1,5 +1,31 @@
 @import "./global";
 
+.preload-images {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  background: url("/img/amazon_clone.png"),
+  url("/img/bar_chart.png"),
+  url("/img/calculator.png"),
+  url("/img/choropleth_map.png"),
+  url("/img/drum_machine.png"),
+  url("/img/e-commerce.png"),
+  url("/img/enigma_machine.png"),
+  url("/img/exercise_tracker.png"),
+  url("/img/heatmap.png"),
+  url("/img/issue_tracker.png"),
+  url("/img/markdown.png"),
+  url("/img/message_board.png"),
+  url("/img/pomodoro.png"),
+  url("/img/project_library.png"),
+  url("/img/random_quote.png"),
+  url("/img/scatter_plot.png"),
+  url("/img/sorting_algo.png"),
+  url("/img/stock_checker.png"),
+  url("/img/treemap.png"),
+  url("/img/units_converter.png")
+}
+
 .projects {
   background-color: $lighter;
   padding: 2rem 0;
