@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 
 const Sidebar = ({ onClick, show }) => {
+
+  useEffect(() => {
+    const handleClick = (event) => {
+      if (event.target.closest(".sidebar-wrapper")) return;
+      onClick(false)
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => {
+      document.removeEventListener("mousedown", handleClick)
+    }
+  });
+
   return (
     <SidebarContainer show={show}>
-      <SidebarWrapper show={show}>
-        <i className="fas fa-times" onClick={onClick}></i>
+      <SidebarWrapper show={show} className="sidebar-wrapper">
+        <i className="fas fa-times" onClick={() => onClick(false)}></i>
         <Navigation />
       </SidebarWrapper>
     </SidebarContainer>

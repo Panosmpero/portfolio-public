@@ -43,9 +43,10 @@ const Header = () => {
     setDarkTheme(prev => !prev)    
   };
 
-  const showSidebar = () => {
-    setShow(!show)
+  const showSidebar = (bool) => {
+    setShow(bool)
   }
+  console.log(show)
 
   return (
     <>
@@ -59,7 +60,7 @@ const Header = () => {
         <div className="nav-list nav-items">
           <Navigation />
         </div>
-        <i className="fas fa-bars" id="burger" onClick={showSidebar}></i>
+        <i className="fas fa-bars" id="burger" onClick={() => setShow(true)}></i>
       </div>
     </header>
     <Sidebar show={show} onClick={showSidebar}/>

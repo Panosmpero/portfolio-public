@@ -61,7 +61,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -204,7 +204,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -485,7 +485,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -741,7 +741,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -1109,7 +1109,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -1323,7 +1323,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -1490,7 +1490,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -1862,7 +1862,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -2079,7 +2079,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -2316,7 +2316,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
@@ -2515,7 +2515,7 @@ button {
   height: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   -ms-grid-rows: 1fr 100fr 1fr;
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;

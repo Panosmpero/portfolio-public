@@ -3,29 +3,31 @@ import { data } from "../data/all";
 import Loading from "./Loading";
 
 const Projects = () => {
-  
-  // preload img
-  data.forEach(proj => {
-    const img = new Image();
-    img.src = proj.img
-  })
+
 
   const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState(data);
-  
+
   useEffect(() => {
-    // loading
-    setTimeout(() => {
-      setLoading(false);
-    }, 500)
-  }, [projects])
+    let count = 0
+    const preloadImg = () => {
+      data.forEach((proj) => {
+        let image = new Image()
+        image.src = proj.img
+        image.onload = count++
+      })
+    }
+    
+    preloadImg()
+    if (count === projects.length) setLoading(false)
+  }, [projects.length])
 
   const filterProjects = (filters) => {
-    const newProjects = filters === "frontend" 
+    const newProjects = filters === "frontend"
       ? data.filter(project => project.frontend)
       : filters === "backend"
-      ? data.filter(project => project.backend)
-      : data
+        ? data.filter(project => project.backend)
+        : data
     setProjects(newProjects)
   }
 
@@ -79,7 +81,7 @@ const Projects = () => {
             </div>
           </div>
         ))}
-        
+
       </div>
     </div>
   );
