@@ -1,10 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import Sidebar from "./Sidebar";
+import { data } from "../data/all"
 
 const Header = () => {
   const [darkTheme, setDarkTheme] = useState(false);
   const [show, setShow] = useState(false);
+
+  // Preloads /projects images
+  (function preloadProjects () {
+    let images = []
+    data.forEach((proj, i) => {
+      images[i] = new Image()
+      images[i].src = proj.img
+    })
+  })()
 
   useEffect(() => {
     window.onscroll = () => {
@@ -40,7 +50,7 @@ const Header = () => {
   }, [darkTheme])
 
   const changeColor = () => {
-    setDarkTheme(prev => !prev)    
+    setDarkTheme(prev => !prev)
   };
 
   const showSidebar = (bool) => {
@@ -49,20 +59,20 @@ const Header = () => {
 
   return (
     <>
-    <header className="header" id="header">
-      <div className="header-container" id="header-container">
-        <div className="theme-wrapper nav-items">
-          <i className="far fa-sun"></i>
-          <div className="theme" id="theme" onClick={changeColor}><div className="theme-ball"></div></div>
-          <i className="far fa-moon"></i>
+      <header className="header" id="header">
+        <div className="header-container" id="header-container">
+          <div className="theme-wrapper nav-items">
+            <i className="far fa-sun"></i>
+            <div className="theme" id="theme" onClick={changeColor}><div className="theme-ball"></div></div>
+            <i className="far fa-moon"></i>
+          </div>
+          <div className="nav-list nav-items">
+            <Navigation />
+          </div>
+          <i className="fas fa-bars" id="burger" onClick={() => setShow(true)}></i>
         </div>
-        <div className="nav-list nav-items">
-          <Navigation />
-        </div>
-        <i className="fas fa-bars" id="burger" onClick={() => setShow(true)}></i>
-      </div>
-    </header>
-    <Sidebar show={show} onClick={showSidebar}/>
+      </header>
+      <Sidebar show={show} onClick={showSidebar} />
     </>
   );
 };
