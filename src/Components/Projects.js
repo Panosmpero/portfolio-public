@@ -9,18 +9,12 @@ const Projects = () => {
   const [projects, setProjects] = useState(data);
 
   useEffect(() => {
-    let count = 0
-    const preloadImg = () => {
-      data.forEach((proj) => {
-        let image = new Image()
-        image.src = proj.img
-        image.onload = count++
-      })
-    }
-    
-    preloadImg()
-    if (count === projects.length) setLoading(false)
-  }, [projects.length])
+
+    setTimeout(() => {
+      setLoading(false)
+    },500)
+
+  }, [])
 
   const filterProjects = (filters) => {
     const newProjects = filters === "frontend"
@@ -48,7 +42,7 @@ const Projects = () => {
                   <h2>{project.title}</h2>
                   <div className="underline"></div>
                 </div>
-                <img src={project.img} alt="project" />
+                <img src={project.img} alt="project"/>
               </div>
               <div className="side back">
                 <div className="back-container">

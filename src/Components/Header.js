@@ -46,7 +46,6 @@ const Header = () => {
   const showSidebar = (bool) => {
     setShow(bool)
   }
-  console.log(show)
 
   return (
     <>

@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const Hero = () => {
 
   const img = new Image();
-  img.src = "/img/profile_img.jpg"
+  img.src = "/img/profile_img.png"
 
   useEffect(() => {
     document.getElementById("hero").className = "banner";
