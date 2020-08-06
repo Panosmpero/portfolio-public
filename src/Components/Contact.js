@@ -36,7 +36,6 @@ const Contact = () => {
         onSubmit={handleSubmit}
         action="https://formspree.io/xeqrnlbv"
         method="POST"
-        data-netlify-recaptcha="true"
         data-netlify="true"
       >
         <h2>get in touch</h2>
@@ -65,9 +64,8 @@ const Contact = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <div className="recaptcha-container" data-netlify-recaptcha="true">
-          <div className="g-recaptcha" data-sitekey="6LcfD7sZAAAAAPBOcwNq2_CUENYcDdUpWxzEW_tB" ></div>
-        </div>
+        <div className="recaptcha-container" data-netlify-recaptcha="true"></div>
+        <div className="g-recaptcha" data-sitekey="6LcfD7sZAAAAAPBOcwNq2_CUENYcDdUpWxzEW_tB" ></div>
         <div className="submit-status">{status}</div>
         <button type="submit">submit</button>
       </form>
