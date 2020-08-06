@@ -27,11 +27,18 @@ const Contact = () => {
       }
     };
     xhr.send(data);
-  }      
+  }
 
   return (
     <div className="form-container">
-      <form className="form" onSubmit={handleSubmit} action="https://formspree.io/xeqrnlbv" method="POST">
+      <form
+        className="form"
+        onSubmit={handleSubmit}
+        action="https://formspree.io/xeqrnlbv"
+        method="POST"
+        data-netlify-recaptcha="true"
+        data-netlify="true"
+      >
         <h2>get in touch</h2>
         <div className="underline"></div>
         <input
