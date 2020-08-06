@@ -6,27 +6,32 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState(null);
 
-  const handleSubmit = async (e) => {
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setStatus("loading");
+  //   const form = e.target;
+  //   const data = new FormData(form);
+  //   const xhr = new XMLHttpRequest();
+  //   xhr.open(form.method, form.action);
+  //   xhr.setRequestHeader("Accept", "application/json");
+  //   xhr.onreadystatechange = () => {
+  //     if (xhr.readyState !== XMLHttpRequest.DONE) return;
+  //     if (xhr.status === 200) {
+  //       form.reset();
+  //       setStatus("SUCCESS");
+  //       setName("")
+  //       setEmail("")
+  //       setMessage("")
+  //     } else {
+  //       setStatus("ERROR")
+  //     }
+  //   };
+  //   xhr.send(data);
+  // }
+  const handleSubmit = (e) => {
     e.preventDefault();
     setStatus("loading");
-    const form = e.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        setStatus("SUCCESS");
-        setName("")
-        setEmail("")
-        setMessage("")
-      } else {
-        setStatus("ERROR")
-      }
-    };
-    xhr.send(data);
+    setStatus("SUCCESS")
   }
 
   return (
@@ -34,9 +39,9 @@ const Contact = () => {
       <form
         className="form"
         onSubmit={handleSubmit}
-        action="https://formspree.io/xeqrnlbv"
         method="POST"
         data-netlify="true"
+        data-netlify-recaptcha="true"
       >
         <h2>get in touch</h2>
         <div className="underline"></div>
@@ -64,7 +69,7 @@ const Contact = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <div data-netlify-recaptcha="true"></div>
+        <div class="g-recaptcha" data-sitekey="6LcfD7sZAAAAAPBOcwNq2_CUENYcDdUpWxzEW_tB"></div>
         <div className="submit-status">{status}</div>
         <button type="submit">submit</button>
       </form>
