@@ -1766,8 +1766,6 @@ button {
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
   font-size: 2.5rem;
   color: var(--light);
   -webkit-transition: 0.4s ease;
