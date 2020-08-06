@@ -8,7 +8,7 @@ const Header = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
        // Preloads '/projects' images
       (function preloadProjects() {
         let images = []
@@ -18,7 +18,8 @@ const Header = () => {
         })
       })()
 
-    }, 2000)
+    }, 2000);
+    return () => clearTimeout(timer)
   }, [])
 
 

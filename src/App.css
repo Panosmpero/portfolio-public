@@ -66,6 +66,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -209,6 +210,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -490,6 +492,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -746,6 +749,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -1114,6 +1118,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -1328,6 +1333,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -1495,6 +1501,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -1867,6 +1874,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -2086,6 +2094,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -2323,6 +2332,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -2417,12 +2427,6 @@ button {
   border-radius: 1rem;
 }
 
-.about-container h1 {
-  text-align: center;
-  font-size: 3.5rem;
-  color: var(--main);
-}
-
 .about-wrapper {
   font-size: 2rem;
   color: var(--dark);
@@ -2452,6 +2456,31 @@ button {
   font-size: 2.5rem;
   color: red;
   margin-left: 1rem;
+}
+
+.about-header {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--main);
+  position: relative;
+  z-index: 1;
+}
+
+.about-randomize {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 50%;
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 2px var(--main) solid;
+  z-index: 2;
+  -webkit-transform: translate(100%, -100%) rotate(3000deg);
+          transform: translate(100%, -100%) rotate(3000deg);
+  opacity: 0;
+  -webkit-transition: 2.5s ease-out;
+  transition: 2.5s ease-out;
 }
 
 :root {
@@ -2522,6 +2551,7 @@ button {
       grid-template-rows: 1fr 100fr 1fr;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  overflow-x: hidden;
 }
 
 .header {

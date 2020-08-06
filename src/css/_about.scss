@@ -16,13 +16,8 @@
   background-color: $white;
   padding: 3.5rem;
   border-radius: 1rem;
-
-  h1 {
-    text-align: center;
-    font-size: 3.5rem;
-    color: $main;
-  }
 }
+
 .about-wrapper {
   font-size: 2rem;
   color: $dark;
@@ -45,4 +40,27 @@
     color: red;
     margin-left: 1rem;
   }
+}
+
+.about-header {
+  text-align: center;
+  font-size: 3.5rem;
+  color: $main;
+  position: relative;
+  z-index: 1;
+}
+
+.about-randomize {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 50%;
+  background-color: $white;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 2px $main solid;
+  z-index: 2;
+  transform: translate(100%, -100%) rotate(3000deg);
+  opacity: 0;
+  transition: 2.5s ease-out;
 }
