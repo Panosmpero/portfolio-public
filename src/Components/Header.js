@@ -7,14 +7,20 @@ const Header = () => {
   const [darkTheme, setDarkTheme] = useState(false);
   const [show, setShow] = useState(false);
 
-  // Preloads /projects images
-  (function preloadProjects () {
-    let images = []
-    data.forEach((proj, i) => {
-      images[i] = new Image()
-      images[i].src = proj.img
-    })
-  })()
+  useEffect(() => {
+    setTimeout(() => {
+       // Preloads '/projects' images
+      (function preloadProjects() {
+        let images = []
+        data.forEach((proj, i) => {
+          images[i] = new Image()
+          images[i].src = proj.img
+        })
+      })()
+
+    }, 2000)
+  }, [])
+
 
   useEffect(() => {
     window.onscroll = () => {
