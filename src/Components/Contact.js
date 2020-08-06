@@ -64,8 +64,7 @@ const Contact = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <div className="recaptcha-container" data-netlify-recaptcha="true"></div>
-        <div className="g-recaptcha" data-sitekey="6LcfD7sZAAAAAPBOcwNq2_CUENYcDdUpWxzEW_tB" ></div>
+        <div data-netlify-recaptcha="true"></div>
         <div className="submit-status">{status}</div>
         <button type="submit">submit</button>
       </form>
