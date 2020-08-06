@@ -3,7 +3,7 @@ export const data = [
     id: 1,
     title: "Amazon Clone",
     technologies: ["react", "redux", "sass", "node.js", "mongodb", "heroku"],
-    url: "",
+    url: "https://bero-amazon-clone.herokuapp.com/",
     giturl: "https://github.com/Panosmpero/amazon-clone",
     img: "/img/amazon_clone.png",
     backend: true,

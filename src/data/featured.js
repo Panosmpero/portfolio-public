@@ -4,7 +4,7 @@ export const featuredData = [
     title: "Amazon Clone",
     info: "A responsive amazon clone using React, Redux store for its frontend development. The backend is build with Node.js and the data is saved on MongoDB using mongoose and axios. The user can register/sign-in using his credentials while the password is hashed using bcrypt and the cart items are being saved in Cookie. Only admin can add/edit/remove products as well as managing pending customer orders with ease through a custom user interface. (Note: The initial page load may take some time, because the site is hosted on Heroku).",
     technologies: ["react", "redux", "sass", "node.js", "mongodb", "heroku"],
-    url: "",
+    url: "https://bero-amazon-clone.herokuapp.com/",
     giturl: "https://github.com/Panosmpero/amazon-clone",
     img: "/img/amazon_clone.png"
   },
