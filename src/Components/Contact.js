@@ -46,6 +46,7 @@ const Contact = () => {
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
         <input
           type="email"
@@ -54,6 +55,7 @@ const Contact = () => {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <input
           type="text"
@@ -62,6 +64,7 @@ const Contact = () => {
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          required
         />
         <div className="submit-status">{status}</div>
         <button type="submit">submit</button>

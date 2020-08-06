@@ -22,7 +22,7 @@ const About = () => {
           </div>
           <div className="about-cv">
             Check out my CV here
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/CV_8-6-2020.pdf" target="_blank" rel="noopener noreferrer">
               <i className="far fa-file-pdf"></i>
             </a>
           </div>
