@@ -1951,10 +1951,9 @@ button {
 }
 
 .form {
-  min-width: 40rem;
-  min-height: 40rem;
+  min-width: 35rem;
+  min-height: 50rem;
   background-color: var(--white);
-  border: 1px black solid;
   border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1984,6 +1983,7 @@ button {
   width: 100%;
   background-color: var(--main);
   color: var(--lighter);
+  border-radius: 1rem;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -2014,6 +2014,7 @@ button {
   color: var(--main);
   text-transform: capitalize;
   font-weight: 600;
+  margin: auto;
 }
 
 :root {

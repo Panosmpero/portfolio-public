@@ -8,10 +8,9 @@
 }
 
 .form {
-  min-width: 40rem;
-  min-height: 40rem;
+  min-width: 35rem;
+  min-height: 50rem;
   background-color: $white;
-  border: 1px black solid;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -32,6 +31,7 @@
     width: 100%;
     background-color: $main;
     color: $lighter;
+    border-radius: 1rem;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
@@ -62,6 +62,7 @@
   color: $main;
   text-transform: capitalize;
   font-weight: 600;
+  margin: auto;
 }
 
 
