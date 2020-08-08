@@ -4,38 +4,30 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState(null);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("loading");
-    const form = e.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        setStatus("SUCCESS");
-        setName("")
-        setEmail("")
-        setMessage("")
-      } else {
-        setStatus("ERROR")
-      }
-    };
-    xhr.send(data);
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
   }
+
+  const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
 
   return (
     <div className="form-container">
       <form
         className="form"
         onSubmit={handleSubmit}
-        method="POST"
-        action="https://formspree.io/xeqrnlbv"
       >
         <h2>get in touch</h2>
         <div className="underline"></div>
@@ -50,23 +42,22 @@ const Contact = () => {
         />
         <input
           type="email"
-          placeholder="Email"
           name="email"
+          placeholder="Email"
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <input
+        <textarea
           type="text"
-          placeholder="Message"
           name="message"
+          placeholder="Message"
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
         />
-        <div className="submit-status">{status}</div>
         <button type="submit">submit</button>
       </form>
     </div>

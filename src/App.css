@@ -2048,18 +2048,24 @@ button {
   color: var(--main);
 }
 
-.form input {
+.form textarea {
+  min-height: 10rem;
+}
+
+.form input, .form textarea {
   margin-bottom: 2.5rem;
   width: 100%;
+  max-width: 40rem;
   font-size: 2rem;
   padding: 0.5rem;
   border-radius: 1rem;
+  border: 2px var(--main) solid;
   outline: none;
   background-color: var(--lighter);
   color: var(--main);
 }
 
-.form input:focus {
+.form input:focus, .form textarea:focus {
   -webkit-box-shadow: 0 0 15px 10px var(--lighter);
           box-shadow: 0 0 15px 10px var(--lighter);
   background-color: var(--white);

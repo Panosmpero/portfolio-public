@@ -42,12 +42,18 @@
     }
   }
 
-  input {
+  textarea {
+    min-height: 10rem;
+  }
+
+  input, textarea {
     margin-bottom: 2.5rem;
     width: 100%;
+    max-width: 40rem;
     font-size: 2rem;
     padding: 0.5rem;
     border-radius: 1rem;
+    border: 2px $main solid;
     outline: none;
     background-color: $lighter;
     color: $main;
