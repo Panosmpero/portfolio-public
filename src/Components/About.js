@@ -18,12 +18,12 @@ const About = () => {
 
   const handleMarkovChain = () => {
     let markovChain = {}
-    let totalText = featuredData.reduce((acc, x) => acc + x.info, "") + about
+    let totalText = featuredData.reduce((acc, x) => acc + " " + x.info, "") + " " + about
     let allWords = totalText.split(" ");
     for (let i = 0; i < allWords.length; i++) {
-      let word = allWords[i].toLowerCase().replace(/[\W_]/, "")
+      let word = allWords[i].toLowerCase().replace(/[\W_]/g, "")
       if (!markovChain[word]) markovChain[word] = []
-      if (allWords[i + 1]) markovChain[word].push(allWords[i + 1].toLowerCase().replace(/[\W_]/, ""))
+      if (allWords[i + 1]) markovChain[word].push(allWords[i + 1].toLowerCase().replace(/[\W_]/g, ""))
     }
     // console.log(markovChain)
     let words = Object.keys(markovChain)
@@ -42,7 +42,7 @@ const About = () => {
   return (
     <section className="about">
       <div className="about-container">
-        <h1 className="about-header">about me<div id="about-randomize" className="about-randomize" onClick={handleMarkovChain}>randomize text</div></h1>
+        <h1 className="about-header">about me<div id="about-randomize" className="about-randomize" onClick={handleMarkovChain}>markov chain<br/> generator</div></h1>
 
         <div className="underline"></div>
         <div className="about-wrapper">
@@ -53,7 +53,7 @@ const About = () => {
           </div>
           <div className="about-cv">
             Check out my CV here
-            <a href="/CV_8-6-2020.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/CV_8-8-2020.pdf" target="_blank" rel="noopener noreferrer">
               <i className="far fa-file-pdf"></i>
             </a>
           </div>

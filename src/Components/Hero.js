@@ -17,12 +17,6 @@ const Hero = () => {
       boxShadow: "15px 15px 45px 10px white",
       transform: "translate(-12%, -12%)"
     })
-    Object.assign(document.getElementById("hero-header").style, {
-      left: "25%",
-    })
-    Object.assign(document.getElementById("hero-text").style, {
-      left: "35%"
-    })
   }, [])
 
   return (
