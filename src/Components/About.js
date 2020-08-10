@@ -53,7 +53,7 @@ const About = () => {
           </div>
           <div className="about-cv">
             Check out my CV here
-            <a href="/CV_8-8-2020.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Berovalis_Panagiotis_CV.pdf" target="_blank" rel="noopener noreferrer">
               <i className="far fa-file-pdf"></i>
             </a>
           </div>

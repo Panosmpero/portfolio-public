@@ -155,6 +155,25 @@
   }
 }
 
+.featured-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  button {
+    border: 2px $main solid;
+    color: $main;
+    background-color: $light;
+    border-radius: 5rem;
+    padding: 1.5rem;
+    font-size: 3rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
 @media (max-width: 75em) {
 
   .featured-project-img {

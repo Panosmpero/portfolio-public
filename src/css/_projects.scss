@@ -2,7 +2,14 @@
 
 .projects {
   background-color: $lighter;
+  height: 100%;
   padding: 2rem 0;
+}
+
+.projects-filters-header {
+  text-align: center;
+  color: $dark;
+  margin-bottom: .5rem;
 }
 
 .projects-filters {
@@ -10,9 +17,12 @@
 
   button {
     margin-right: 2rem;
+    outline: none;
+    
 
     &:hover {
       transform: translateY(-5%);
+      box-shadow: 0 1px 2px 0 $dark;
     }
   }
 }
@@ -24,6 +34,7 @@
   margin: 3rem auto;
   background-color: $light;
   gap: 0.5rem;
+  padding: .5rem;
 }
 
 .card-container {

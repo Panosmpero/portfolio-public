@@ -1,5 +1,15 @@
 export const data = [
   {
+    id: 0,
+    title: "Covid-19 Tracker",
+    technologies: ["react", "material-UI", "React-charts-2", "Leaflet", "sass", "firebase"],
+    url: "https://beros-covid-tracker.web.app",
+    giturl: "https://github.com/Panosmpero/COVID-19-Tracker",
+    img: "/img/covid_tracker.png",
+    backend: false,
+    frontend: true
+  },
+  {
     id: 1,
     title: "Amazon Clone",
     technologies: ["react", "redux", "sass", "node.js", "mongodb", "heroku"],

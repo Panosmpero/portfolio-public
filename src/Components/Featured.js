@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { featuredData } from "../data/featured";
 
-const Featured = () => { 
-
+const Featured = () => {
   return (
     <section className="featured-container">
       <div className="featured-wrapper">
@@ -55,6 +55,11 @@ const Featured = () => {
               </article>
             );
           })}
+        </div>
+        <div className="featured-footer">
+          <Link to="/projects">
+            <button>visit all projects</button>
+          </Link>
         </div>
       </div>
     </section>
