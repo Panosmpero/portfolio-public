@@ -23,6 +23,7 @@ const Header = () => {
   }, [])
 
 
+  // header - footer fixes on scroll
   useEffect(() => {
     window.onscroll = () => {
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -45,6 +46,7 @@ const Header = () => {
     }
   });
 
+  // Light / Dark theme
   useEffect(() => {
     Object.assign(document.getElementById("theme").style, {
       justifyContent: darkTheme ? "flex-end" : "flex-start"

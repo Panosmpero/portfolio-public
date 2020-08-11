@@ -5,6 +5,7 @@ const Hero = () => {
   const img = new Image();
   img.src = "/img/profile_img.png"
 
+  // hero img animation
   useEffect(() => {
     document.getElementById("hero").className = "banner";
     Object.assign(document.getElementById("hero-img-container").style, {

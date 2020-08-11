@@ -6,11 +6,13 @@ const Featured = () => {
   return (
     <section className="featured-container">
       <div className="featured-wrapper">
+
         <div className="featured-title">
           <h2>Featured Projects</h2>
           <div className="underline"></div>
-        </div>
+        </div>        
         <div className="featured-projects-container">
+
           {featuredData.map((project) => {
             return (
               <article className="featured-project" key={project.id}>
@@ -23,9 +25,11 @@ const Featured = () => {
                   <p className="featured-project-info">{project.info}</p>
                   <div className="featured-project-footer">
                     <div className="featured-project-tech">
+
                       {project.technologies.map((tech, i) => {
                         return <div key={`tech-${i}`}>{tech}</div>;
                       })}
+
                     </div>
 
                     <div className="featured-project-links">
@@ -55,12 +59,17 @@ const Featured = () => {
               </article>
             );
           })}
+          
         </div>
+
         <div className="featured-footer">
           <Link to="/projects">
-            <button>visit all projects</button>
+            <button>
+              visit all projects<i className="fas fa-angle-double-right"></i>
+            </button>
           </Link>
         </div>
+
       </div>
     </section>
   );

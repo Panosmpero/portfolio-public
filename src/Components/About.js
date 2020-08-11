@@ -6,6 +6,7 @@ import { featuredData } from "../data/featured";
 const About = () => {
   const [text, setText] = useState(about);
 
+  // Markov chain easter egg :D
   useEffect(() => {
     const timer = setTimeout(() => {
       Object.assign(document.getElementById("about-randomize").style, {

@@ -5,6 +5,9 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  // changed submit from external API to using Netlify's
+  // submit form with implemented honeypot
+  // the rest of the form is handled in index.html
   const encode = (data) => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))

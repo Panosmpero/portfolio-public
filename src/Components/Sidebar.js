@@ -1,24 +1,37 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
+import { useLocation } from "react-router-dom";
 
 const Sidebar = ({ onClick, show }) => {
+  const { pathname } = useLocation();
 
+  // clicking outside of sidebar -> hides it
   useEffect(() => {
     const handleClick = (event) => {
       if (event.target.closest(".sidebar-wrapper")) return;
-      onClick(false)
-    }
+      onClick(false);
+    };
     document.addEventListener("mousedown", handleClick);
     return () => {
-      document.removeEventListener("mousedown", handleClick)
-    }
+      document.removeEventListener("mousedown", handleClick);
+    };
   });
+
+  // when clicking sidebar link -> hide sidebar
+  useEffect(() => {
+    onClick(false);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
 
   return (
     <SidebarContainer show={show}>
       <SidebarWrapper show={show} className="sidebar-wrapper">
-        <i className="fas fa-times" onClick={() => onClick(false)}></i>
+        <i
+          style={{ fontSize: "4rem" }}
+          className="fas fa-times"
+          onClick={() => onClick(false)}
+        ></i>
         <Navigation />
       </SidebarWrapper>
     </SidebarContainer>

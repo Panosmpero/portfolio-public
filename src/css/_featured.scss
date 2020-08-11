@@ -105,6 +105,7 @@
   letter-spacing: .15rem;
   line-height: 2.5rem;
   color: $dark;
+  margin-bottom: 1rem;
 }
 
 .featured-project-footer {
@@ -136,12 +137,12 @@
 
 .featured-project-links {
   display: flex;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   transition: .2s ease-out;
 }
 
 .featured-project-url {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   transition: .2s ease-out;
 
   &:hover {
@@ -160,16 +161,22 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 1.5rem;
+
   button {
     border: 2px $main solid;
     color: $main;
-    background-color: $light;
-    border-radius: 5rem;
-    padding: 1.5rem;
+    background-color: $white;
+    padding: 2.5rem;
     font-size: 3rem;
 
+    i{
+      margin-left: .5rem;
+    }
+
     &:hover {
-      transform: scale(1.1);
+      i {
+        animation: hover-button .5s infinite;
+      }
     }
   }
 }
@@ -199,5 +206,14 @@
     &:nth-child(even) .featured-project-wrapper {
       grid-column: 1 / 13;
     }
+  }
+}
+
+@keyframes hover-button {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
   }
 }
