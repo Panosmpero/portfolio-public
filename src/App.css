@@ -2756,4 +2756,38 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.default {
+  height: 100%;
+  background-color: var(--lighter);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.default h1 {
+  font-size: 6rem;
+  color: var(--main);
+}
+
+.default a {
+  font-size: 4rem;
+  color: var(--main);
+}
+
+.default a:hover {
+  font-weight: 600;
+}
+
+.default a:hover i {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.default a i {
+  color: var(--dark);
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
 /*# sourceMappingURL=App.css.map */

@@ -1,6 +1,8 @@
+import {v4 as uuidv4} from "uuid";
+
 export const data = [
   {
-    id: 0,
+    id: uuidv4(),
     title: "Covid-19 Tracker",
     technologies: ["react", "material-UI", "React-charts-2", "Leaflet", "sass", "firebase"],
     url: "https://beros-covid-tracker.web.app",
@@ -10,7 +12,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 1,
+    id: uuidv4(),
     title: "Amazon Clone",
     technologies: ["react", "redux", "sass", "node.js", "mongodb", "heroku"],
     url: "https://bero-amazon-clone.herokuapp.com/",
@@ -20,7 +22,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: "E-commerce",
     technologies: ["react", "javascript" , "sass", "styled-components"],
     url: "https://react-first-test-hooks.netlify.app",
@@ -30,7 +32,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 3,
+    id: uuidv4(),
     title: "Choropleth Map",
     technologies: ["HTML", "CSS", "javascript", "D3.js"],
     url: "https://codepen.io/panosmpero/full/VwvxRjj",
@@ -40,7 +42,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 4,
+    id: uuidv4(),
     title: "Message Board",
     technologies: ["node.js", "express", "mongodb", "mocha.js", "chai.js"],
     url: "https://beros-message-board.glitch.me/",
@@ -50,7 +52,7 @@ export const data = [
     frontend: false
   },
   {
-    id: 5,
+    id: uuidv4(),
     title: "Stock Checker",
     technologies: ["node.js", "express", "mongodb", "mocha.js", "chai.js"],
     url: "https://beros-stockchecker.glitch.me/",
@@ -60,7 +62,7 @@ export const data = [
     frontend: false
   },
   {
-    id: 6,
+    id: uuidv4(),
     title: "Book Library",
     technologies: ["node.js", "express", "mongodb", "mocha.js", "chai.js"],
     url: "https://beros-project-library.glitch.me/",
@@ -70,7 +72,7 @@ export const data = [
     frontend: false
   },
   {
-    id: 7,
+    id: uuidv4(),
     title: "Issue Tracker",
     technologies: ["node.js", "express", "mongodb", "mocha.js", "chai.js"],
     url: "https://beros-issue-tracker.glitch.me/",
@@ -80,7 +82,7 @@ export const data = [
     frontend: false
   },
   {
-    id: 8,
+    id: uuidv4(),
     title: "Unit Converter",
     technologies: ["node.js", "express", "mongodb", "mocha.js", "chai.js"],
     url: "https://beros-metric-converter.glitch.me/",
@@ -90,7 +92,7 @@ export const data = [
     frontend: false
   },
   {
-    id: 9,
+    id: uuidv4(),
     title: "Exercise Tracker",
     technologies: ["node.js", "express", "mongodb"],
     url: "https://beros-exercise-tracker.glitch.me/",
@@ -100,7 +102,7 @@ export const data = [
     frontend: false
   },
   {
-    id: 10,
+    id: uuidv4(),
     title: "Heat Map",
     technologies: ["HTML", "CSS", "javascript", "D3.js"],
     url: "https://codepen.io/panosmpero/full/oNjyMYX",
@@ -110,7 +112,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 11,
+    id: uuidv4(),
     title: "Tree Map",
     technologies: ["HTML", "CSS", "javascript", "D3.js"],
     url: "https://codepen.io/panosmpero/full/QWjrjjV",
@@ -120,7 +122,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 12,
+    id: uuidv4(),
     title: "Scatter Plot",
     technologies: ["HTML", "CSS", "javascript", "D3.js"],
     url: "https://codepen.io/panosmpero/full/VwvXVrz",
@@ -130,7 +132,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 13,
+    id: uuidv4(),
     title: "Bar Chart",
     technologies: ["HTML", "CSS", "javascript", "D3.js"],
     url: "https://codepen.io/panosmpero/full/zYvdxbK",
@@ -140,7 +142,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 14,
+    id: uuidv4(),
     title: "Sorting Algorithms",
     technologies: ["react", "CSS", "javascript", "D3.js"],
     url: "https://bero-sorting-algorithm.netlify.app/",
@@ -150,7 +152,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 15,
+    id: uuidv4(),
     title: "Enigma Machine",
     technologies: ["react", "javascript" , "css"],
     url: "https://codepen.io/panosmpero/full/RwWjBBm",
@@ -160,7 +162,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 16,
+    id: uuidv4(),
     title: "Pomodoro Clock",
     technologies: ["react", "javascript" , "css", "styled-components"],
     url: "https://codepen.io/panosmpero/full/GRpmXLz",
@@ -170,7 +172,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 17,
+    id: uuidv4(),
     title: "React Calculator",
     technologies: ["react", "javascript" , "css"],
     url: "https://codepen.io/panosmpero/full/JjYGZNr",
@@ -180,7 +182,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 18,
+    id: uuidv4(),
     title: "Drum Machine",
     technologies: ["react", "javascript" , "css"],
     url: "https://codepen.io/panosmpero/full/rNOOvjN",
@@ -190,7 +192,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 19,
+    id: uuidv4(),
     title: "Markdown Previewer",
     technologies: ["react", "javascript" , "css"],
     url: "https://codepen.io/panosmpero/full/YzyPVzM",
@@ -200,7 +202,7 @@ export const data = [
     frontend: true
   },
   {
-    id: 20,
+    id: uuidv4(),
     title: "Random Quote",
     technologies: ["react", "javascript" , "css"],
     url: "https://codepen.io/panosmpero/full/KKpGzor",
