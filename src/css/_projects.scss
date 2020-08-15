@@ -6,6 +6,35 @@
   padding: 2rem 0;
 }
 
+.filter-btn {
+  display: flex;
+  font-size: 2rem;
+  width: 10rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 0 auto;
+  color: $dark;
+  margin-bottom: .5rem;
+
+  &:hover {
+    color: $main;
+  }
+}
+
+.projects-filters-container {
+  overflow: hidden;
+  visibility: hidden;
+  margin: 0 .5rem;
+  height: 0;
+  transition: .7s;
+}
+
+.show-container {
+  visibility: visible;
+  height: initial;
+}
+
 .projects-filters-header {
   text-align: center;
   color: $dark;
@@ -14,9 +43,16 @@
 
 .projects-filters {
   text-align: center;
+  border: 2px $dark solid;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  transition: .5s ease;
+  transition-delay: .2s;
+  transform: translateY(-100%);
 
   button {
     margin-right: 2rem;
+    margin-bottom: .5rem;
     outline: none;
     
 
@@ -25,6 +61,15 @@
       box-shadow: 0 1px 2px 0 $dark;
     }
   }
+}
+
+.show-filters {
+  transform: translateY(0);
+}
+
+.button-selected {
+  background-color: $main;
+  color: $lighter;
 }
 
 .grid-container {

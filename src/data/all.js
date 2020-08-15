@@ -24,7 +24,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "E-commerce",
-    technologies: ["react", "javascript" , "sass", "styled-components"],
+    technologies: ["react" , "sass", "styled-components"],
     url: "https://react-first-test-hooks.netlify.app",
     giturl: "https://github.com/Panosmpero/react-test-store",
     img: "/img/e-commerce.png",
@@ -34,7 +34,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Choropleth Map",
-    technologies: ["HTML", "CSS", "javascript", "D3.js"],
+    technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/VwvxRjj",
     giturl: "",
     img: "/img/choropleth_map.png",
@@ -104,7 +104,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Heat Map",
-    technologies: ["HTML", "CSS", "javascript", "D3.js"],
+    technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/oNjyMYX",
     giturl: "",
     img: "/img/heatmap.png",
@@ -114,7 +114,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Tree Map",
-    technologies: ["HTML", "CSS", "javascript", "D3.js"],
+    technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/QWjrjjV",
     giturl: "",
     img: "/img/treemap.png",
@@ -124,7 +124,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Scatter Plot",
-    technologies: ["HTML", "CSS", "javascript", "D3.js"],
+    technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/VwvXVrz",
     giturl: "",
     img: "/img/scatter_plot.png",
@@ -134,7 +134,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Bar Chart",
-    technologies: ["HTML", "CSS", "javascript", "D3.js"],
+    technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/zYvdxbK",
     giturl: "",
     img: "/img/bar_chart.png",
@@ -144,7 +144,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Sorting Algorithms",
-    technologies: ["react", "CSS", "javascript", "D3.js"],
+    technologies: ["react", "CSS", "D3.js"],
     url: "https://bero-sorting-algorithm.netlify.app/",
     giturl: "https://github.com/Panosmpero/sorting-algorithm",
     img: "/img/sorting_algo.png",
@@ -154,7 +154,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Enigma Machine",
-    technologies: ["react", "javascript" , "css"],
+    technologies: ["react" , "CSS"],
     url: "https://codepen.io/panosmpero/full/RwWjBBm",
     giturl: "",
     img: "/img/enigma_machine.png",
@@ -164,7 +164,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Pomodoro Clock",
-    technologies: ["react", "javascript" , "css", "styled-components"],
+    technologies: ["react" , "CSS", "styled-components"],
     url: "https://codepen.io/panosmpero/full/GRpmXLz",
     giturl: "",
     img: "/img/pomodoro.png",
@@ -174,7 +174,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "React Calculator",
-    technologies: ["react", "javascript" , "css"],
+    technologies: ["react" , "CSS"],
     url: "https://codepen.io/panosmpero/full/JjYGZNr",
     giturl: "",
     img: "/img/calculator.png",
@@ -184,7 +184,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Drum Machine",
-    technologies: ["react", "javascript" , "css"],
+    technologies: ["react" , "CSS"],
     url: "https://codepen.io/panosmpero/full/rNOOvjN",
     giturl: "",
     img: "/img/drum_machine.png",
@@ -194,7 +194,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Markdown Previewer",
-    technologies: ["react", "javascript" , "css"],
+    technologies: ["react" , "CSS"],
     url: "https://codepen.io/panosmpero/full/YzyPVzM",
     giturl: "",
     img: "/img/markdown.png",
@@ -204,7 +204,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Random Quote",
-    technologies: ["react", "javascript" , "css"],
+    technologies: ["react" , "CSS"],
     url: "https://codepen.io/panosmpero/full/KKpGzor",
     giturl: "",
     img: "/img/random_quote.png",
