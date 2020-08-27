@@ -668,6 +668,15 @@ button {
   -webkit-animation: header-ani 1s 2s forwards;
           animation: header-ani 1s 2s forwards;
   font-size: 4rem;
+  text-transform: lowercase;
+}
+
+.hero-container .hero-header-container h1 .letter-anim:nth-child(1), .hero-container .hero-header-container h1 .letter-anim:nth-child(7) {
+  text-transform: uppercase;
+}
+
+.hero-container .hero-header-container h1 .letter-anim:nth-child(6) {
+  padding: .5rem;
 }
 
 .hero-container .hero-header-container p {
@@ -679,6 +688,23 @@ button {
   -webkit-animation: text-ani 1s 2.5s forwards;
           animation: text-ani 1s 2.5s forwards;
   font-size: 3rem;
+}
+
+.hero-container .hero-header-container p .letter-anim:nth-child(1), .hero-container .hero-header-container p .letter-anim:nth-child(5) {
+  text-transform: uppercase;
+}
+
+.hero-container .hero-header-container p .letter-anim:nth-child(4) {
+  padding: .5rem;
+}
+
+.letter-anim {
+  display: inline-block;
+}
+
+.letter-anim:hover {
+  -webkit-animation: letter-animation 1s infinite;
+          animation: letter-animation 1s infinite;
 }
 
 @media (max-width: 61.25em) {
@@ -776,6 +802,48 @@ button {
   100% {
     -webkit-box-shadow: 0 0 20px 2px var(--light);
             box-shadow: 0 0 20px 2px var(--light);
+  }
+}
+
+@-webkit-keyframes letter-animation {
+  0% {
+    -webkit-transform: translateX(0) skew(0);
+            transform: translateX(0) skew(0);
+    color: var(--main);
+  }
+  25% {
+    -webkit-transform: translateX(-10%) skew(15deg, 15deg);
+            transform: translateX(-10%) skew(15deg, 15deg);
+  }
+  50% {
+    -webkit-transform: translateX(-10%) skew(-15deg);
+            transform: translateX(-10%) skew(-15deg);
+  }
+  100% {
+    -webkit-transform: translateX(0) skew(0);
+            transform: translateX(0) skew(0);
+    color: var(--light);
+  }
+}
+
+@keyframes letter-animation {
+  0% {
+    -webkit-transform: translateX(0) skew(0);
+            transform: translateX(0) skew(0);
+    color: var(--main);
+  }
+  25% {
+    -webkit-transform: translateX(-10%) skew(15deg, 15deg);
+            transform: translateX(-10%) skew(15deg, 15deg);
+  }
+  50% {
+    -webkit-transform: translateX(-10%) skew(-15deg);
+            transform: translateX(-10%) skew(-15deg);
+  }
+  100% {
+    -webkit-transform: translateX(0) skew(0);
+            transform: translateX(0) skew(0);
+    color: var(--light);
   }
 }
 
@@ -1132,10 +1200,11 @@ button {
 
 .featured-footer button {
   border: 2px var(--main) solid;
+  border-radius: 10rem;
   color: var(--main);
   background-color: var(--white);
   padding: 2.5rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .featured-footer button i {

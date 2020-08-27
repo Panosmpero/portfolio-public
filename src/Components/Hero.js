@@ -13,11 +13,22 @@ const Hero = () => {
     <div className="hero" id="hero">
       <div className="hero-container">
         <div className="hero-header-container">
-          <h1>panos berovalis</h1>
+          <h1>
+            {"panos berovalis".split("").map((letter) => (
+              <span className="letter-anim">{letter}</span>
+            ))}
+          </h1>
         </div>
-        <div className="line-animation"> <div className="line-circle"></div> </div>
+        <div className="line-animation">
+          {" "}
+          <div className="line-circle"></div>{" "}
+        </div>
         <div className="hero-header-container">
-          <p>web developer</p>
+          <p>
+            {"web developer".split("").map((letter) => (
+              <span className="letter-anim">{letter}</span>
+            ))}
+          </p>
         </div>
       </div>
       {/* <div className="hero-my-img-container" id="hero-img-container">

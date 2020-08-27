@@ -84,6 +84,18 @@
       transform: translateY(100%);
       animation: header-ani 1s 2s forwards;
       font-size: 4rem;
+      text-transform: lowercase;
+
+      .letter-anim {
+        &:nth-child(1),
+        &:nth-child(7) {
+          text-transform: uppercase;
+        }
+      
+        &:nth-child(6) {
+          padding: .5rem;
+        }
+      }
     }
 
     p {
@@ -93,7 +105,25 @@
       transform: translateY(-100%);
       animation: text-ani 1s 2.5s forwards;
       font-size: 3rem;
+      .letter-anim {
+        &:nth-child(1),
+        &:nth-child(5) {
+          text-transform: uppercase;
+        }
+      
+        &:nth-child(4) {
+          padding: .5rem;
+        }
+      }
     }
+  }
+}
+
+.letter-anim {
+  display: inline-block;
+
+  &:hover {
+    animation: letter-animation 1s infinite;
   }
 }
 
@@ -162,5 +192,22 @@
   }
   100% {
     box-shadow: 0 0 20px 2px $light;
+  }
+}
+
+@keyframes letter-animation {
+  0% {
+    transform: translateX(0) skew(0);
+    color: $main;
+  }
+  25% {
+    transform: translateX(-10%) skew(15deg, 15deg);    
+  }
+  50% {
+    transform: translateX(-10%) skew(-15deg);
+  }
+  100% {
+    transform: translateX(0) skew(0);
+    color: $light;
   }
 }
