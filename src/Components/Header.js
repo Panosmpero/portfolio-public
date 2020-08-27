@@ -52,7 +52,7 @@ const Header = () => {
       justifyContent: darkTheme ? "flex-end" : "flex-start"
     })
     document.documentElement.style.setProperty("--white", darkTheme ? "rgb(7, 3, 22)" : "rgb(255, 255, 255)");
-    document.documentElement.style.setProperty("--light", darkTheme ? "rgb(51, 19, 105)" : "rgb(136, 235, 242)");
+    document.documentElement.style.setProperty("--light", darkTheme ? "rgb(51, 19, 105)" : "rgb(181, 187, 205)");
     document.documentElement.style.setProperty("--lighter", darkTheme ? "rgb(0, 0, 0)" : "rgb(231, 237, 255)");
     document.documentElement.style.setProperty("--main", darkTheme ? "#b4c1e4" : "#0a6c75");
     document.documentElement.style.setProperty("--dark", darkTheme ? "rgba(255, 255, 255, 0.856)" : "rgba(11, 5, 43, 0.856)");

@@ -7,7 +7,6 @@
   display: grid;
   place-items: center;
   overflow-x: hidden;
-
 }
 
 .about-container {
@@ -18,18 +17,19 @@
   background-color: $white;
   padding: 3.5rem;
   border-radius: 1rem;
+  position: relative;
 }
 
 .about-wrapper {
   font-size: 2rem;
   color: $dark;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   line-height: 2.5rem;
   display: flex;
   flex-direction: column;
 
   .social {
-    justify-content: center; 
+    justify-content: center;
   }
 }
 
@@ -47,22 +47,42 @@
 .about-header {
   text-align: center;
   font-size: 3.5rem;
-  color: $main;
-  position: relative;
-  z-index: 1;
+  color: $main;  
 }
 
 .about-randomize {
   position: absolute;
   cursor: pointer;
   top: 0;
-  left: 50%;
+  right: 0;
   background-color: $white;
+  color: $main;
   padding: 1rem;
   border-radius: 2rem;
   border: 2px $main solid;
   z-index: 2;
-  transform: translate(100%, -100%) rotate(3000deg);
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
   opacity: 0;
-  transition: 2.5s ease-out;
+  animation: markov 2s 10s forwards;
+}
+
+// Markov chain easter egg :D
+
+@keyframes markov {
+  0% {
+    transform: scale(0) rotate(45deg) translate(18%, 35%);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1.2) rotate(45deg) translate(18%, 35%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(45deg) translate(18%, 35%);
+    opacity: 1;
+  }
 }

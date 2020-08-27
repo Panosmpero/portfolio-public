@@ -1,21 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Social from "./Social";
 import { about } from "../data/about";
 import { featuredData } from "../data/featured";
 
 const About = () => {
   const [text, setText] = useState(about);
-
-  // Markov chain easter egg :D
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      Object.assign(document.getElementById("about-randomize").style, {
-        opacity: 1,
-        transform: "translate(-50%, 0) rotate(-30deg)"
-      })
-    }, 10000);
-    return () => clearTimeout(timer)
-  }, [])
 
   const handleMarkovChain = () => {
     let markovChain = {}
@@ -43,7 +32,8 @@ const About = () => {
   return (
     <section className="about">
       <div className="about-container">
-        <h1 className="about-header">about me<div id="about-randomize" className="about-randomize" onClick={handleMarkovChain}>markov chain<br/> generator</div></h1>
+      <div id="about-randomize" className="about-randomize" onClick={handleMarkovChain}>markov chain<br/> generator</div>
+        <h1 className="about-header">about me</h1>
 
         <div className="underline"></div>
         <div className="about-wrapper">
