@@ -78,26 +78,29 @@
   max-width: 1180px;
   margin: 3rem auto;
   background-color: $lighter;
-  gap: 0.5rem;
-  padding: .5rem;
+  gap: 1rem;
 }
 
 .card-container {
   position: relative;
   justify-self: center;
+  width: 385px;
+  height: 300px;
 }
 
 .card {
-  width: 385px;
-  height: 300px;
+  height: 100%;
+  width: 100%;
   position: relative;
-  border: 2px $dark solid;
   transition: 0.5s ease-out;
   transform-style: preserve-3d;
+  box-shadow: 2px 2px 5px 2px $dark;
 }
 
 .card-container:hover .card {
   transform: rotateY(180deg);
+  box-shadow: -2px 2px 5px 2px $dark;
+
 }
 
 .card-container:hover .front {
