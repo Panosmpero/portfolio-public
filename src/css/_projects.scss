@@ -84,7 +84,7 @@
 .card-container {
   position: relative;
   justify-self: center;
-  width: 385px;
+  max-width: 500px;
   height: 300px;
 }
 
@@ -246,11 +246,6 @@
 }
 
 @media (max-width: 31.25em) {
-  .card {
-    width: 285px;
-    height: 250px;
-  }
-
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
   }
