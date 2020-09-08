@@ -33,6 +33,16 @@ export const data = [
   },
   {
     id: uuidv4(),
+    title: "Birdie Technical Test",
+    technologies: ["react", "redux", "sass", "chart.js", "node.js", "MySQL", "heroku"],
+    url: "https://birdie-observations-tracker.netlify.app/",
+    giturl: "https://github.com/Panosmpero/birdie-observations-tracker",
+    img: "/img/birdie_technical_test.png",
+    backend: true,
+    frontend: true
+  },
+  {
+    id: uuidv4(),
     title: "Choropleth Map",
     technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/VwvxRjj",
