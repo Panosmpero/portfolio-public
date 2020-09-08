@@ -4,7 +4,7 @@ const Social = () => {
   return (
     <div className="social">
       <a
-        href="https://www.linkedin.com/in/panagiotis-berovalis-18353619a/"
+        href="https://www.linkedin.com/in/panagiotis-berovalis/"
         id="profile-link"
         target="_blank"
         rel="noopener noreferrer"
