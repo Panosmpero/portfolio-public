@@ -579,7 +579,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  background-image: url("/img/hero_img.webp");
+  background-image: url("/img/hero_img.jpg");
   background-size: cover;
   background-position: right;
   color: var(--lighter);
