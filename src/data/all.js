@@ -3,22 +3,39 @@ import {v4 as uuidv4} from "uuid";
 export const data = [
   {
     id: uuidv4(),
+    title: "Love Hemp Health",
+    technologies: ["Wordpress"],
+    url: "http://lovehemphealth.store/",
+    img: "/img/lovehemphealth.png",
+    backend: true,
+    frontend: true
+  },
+  {
+    id: uuidv4(),
+    title: "Breakout",
+    technologies: ["Wordpress"],
+    url: "https://www.breakout.gr/",
+    img: "/img/breakout.png",
+    backend: true,
+    frontend: true
+  },
+  {
+    id: uuidv4(),
+    title: "AnimaTexniki",
+    technologies: ["Joomla"],
+    url: "https://animatexniki.gr/",
+    img: "/img/animatexniki.png",
+    backend: true,
+    frontend: true
+  },
+  {
+    id: uuidv4(),
     title: "Covid-19 Tracker",
     technologies: ["react", "material-UI", "React-charts-2", "Leaflet", "sass", "firebase"],
     url: "https://beros-covid-tracker.web.app",
     giturl: "https://github.com/Panosmpero/COVID-19-Tracker",
     img: "/img/covid_tracker.png",
     backend: false,
-    frontend: true
-  },
-  {
-    id: uuidv4(),
-    title: "Amazon Clone",
-    technologies: ["react", "redux", "sass", "node.js", "mongodb", "heroku"],
-    url: "https://bero-amazon-clone.herokuapp.com/",
-    giturl: "https://github.com/Panosmpero/amazon-clone",
-    img: "/img/amazon_clone.png",
-    backend: true,
     frontend: true
   },
   {
@@ -38,6 +55,16 @@ export const data = [
     url: "https://birdie-observations-tracker.netlify.app/",
     giturl: "https://github.com/Panosmpero/birdie-observations-tracker",
     img: "/img/birdie_technical_test.png",
+    backend: true,
+    frontend: true
+  },
+  {
+    id: uuidv4(),
+    title: "Amazon Clone",
+    technologies: ["react", "redux", "sass", "node.js", "mongodb", "heroku"],
+    url: "https://bero-amazon-clone.herokuapp.com/",
+    giturl: "https://github.com/Panosmpero/amazon-clone",
+    img: "/img/amazon_clone.png",
     backend: true,
     frontend: true
   },
