@@ -6,7 +6,7 @@ export const data = [
     title: "Love Hemp Health",
     technologies: ["Wordpress"],
     url: "http://lovehemphealth.store/",
-    img: "/img/lovehemphealth.png",
+    img: "/img/lovehemphealth.webp",
     backend: true,
     frontend: true
   },
@@ -15,7 +15,7 @@ export const data = [
     title: "Breakout",
     technologies: ["Wordpress"],
     url: "https://www.breakout.gr/",
-    img: "/img/breakout.png",
+    img: "/img/breakout.webp",
     backend: true,
     frontend: true
   },
@@ -24,7 +24,7 @@ export const data = [
     title: "AnimaTexniki",
     technologies: ["Joomla"],
     url: "https://animatexniki.gr/",
-    img: "/img/animatexniki.png",
+    img: "/img/animatexniki.webp",
     backend: true,
     frontend: true
   },
