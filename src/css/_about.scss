@@ -37,6 +37,7 @@
   width: 70%;
   min-width: 300px;
   margin: 2rem 0;
+  color: $dark;
 }
 
 .about-certification-container {
@@ -50,15 +51,16 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+
+  h2 {
+    position: relative;
+    display: flex;
+  }
 }
 
 .about-certification-wrapper {
   display: flex;
   margin-top: 1rem;
-
-  &:hover {
-    color: $light;
-  }
 
   div {
     &:nth-child(1) {
@@ -71,6 +73,12 @@
     &:nth-child(3) {
       color: red;
       margin-left: auto;
+    }
+  }
+
+  h3 {
+    &:hover {
+      color: $light;
     }
   }
 }

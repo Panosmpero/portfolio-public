@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import {Context} from "../Context/context";
 
 const Navigation = () => {
+  const { awsNotification } = useContext(Context);
   return (
     <>
       <ul className="navigation">
@@ -10,6 +12,7 @@ const Navigation = () => {
         </li>
         <li>
           <Link to="/about">About</Link>
+          {awsNotification && <div className="notification">1</div>}
         </li>
         <li>
           <Link to="/projects">Projects</Link>

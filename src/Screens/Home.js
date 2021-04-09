@@ -1,7 +1,7 @@
 import React from 'react';
-import Hero from "./Hero";
-import Featured from "./Featured";
-import Connect from "./Connect"
+import Hero from "../Components/Hero";
+import Featured from "../Components/Featured";
+import Connect from "../Components/Connect";
 
 const Main = () => {
   return (

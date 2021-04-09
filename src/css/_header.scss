@@ -65,40 +65,46 @@
 
   li {
     margin: 0 2rem;
-    cursor: pointer;
     position: relative;
-    color: $dark;
-    font-weight: 600;
-    letter-spacing: .15rem;
-    font-size: 2rem;
 
-    &:nth-last-child(1) {
-      margin-right: .5rem;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: -20%;
-      height: .25rem;
-      width: 0;
-      opacity: 0;
-      background-color: $light;
-      transition: .3s ease;
-    }
-
-    &:hover {
-      color: $light;
-      
+    a {
+      cursor: pointer;
+      position: relative;
+      color: $dark;
+      font-weight: 600;
+      letter-spacing: .15rem;
+      font-size: 2rem;
+  
+      &:nth-last-child(1) {
+        margin-right: .5rem;
+      }
+  
       &::after {
-        left: 0;
-        right: 0;
-        width: 100%;
-        opacity: 1;
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -20%;
+        height: .25rem;
+        width: 0;
+        opacity: 0;
+        background-color: $light;
+        transition: .3s ease;
+      }
+  
+      &:hover {
+        color: $light;
+        
+        &::after {
+          left: 0;
+          right: 0;
+          width: 100%;
+          opacity: 1;
+        }
       }
     }
   }
+
+
 }
 
 #burger {

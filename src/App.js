@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.scss";
 import Header from "./Components/Header";
-import Main from "./Components/Main";
-import About from "./Components/About";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
+import Home from "./Screens/Home";
+import About from "./Screens/About";
+import Projects from "./Screens/Projects";
+import Contact from "./Screens/Contact";
 import Footer from "./Components/Footer";
 import { Route, Switch } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
@@ -17,7 +17,7 @@ function App() {
       <div className="main">
         <ScrollToTop />
         <Switch>
-          <Route exact path="/" component={Main} />
+          <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/projects" component={Projects} />

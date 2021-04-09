@@ -2,11 +2,22 @@ import React, { useContext } from "react";
 import { Context } from "../Context/context";
 
 const Certification = ({ data }) => {
-  const { showFcc, showAws, setShowAws, setShowFcc } = useContext(Context);
+  const {
+    showFcc,
+    showAws,
+    setShowAws,
+    setShowFcc,
+    awsNotification,
+    setAwsNotification,
+  } = useContext(Context);
   const currentCategory = data.title === "FreeCodeCamp" ? showFcc : showAws;
 
   const handleExpand = () => {
-    data.title === "FreeCodeCamp" ? setShowFcc(!showFcc) : setShowAws(!showAws);
+    if (data.title === "FreeCodeCamp") setShowFcc(!showFcc);
+    if (data.title === "AWS") {
+      setShowAws(!showAws);
+      setAwsNotification(false);
+    }
   };
 
   return (
@@ -15,7 +26,12 @@ const Certification = ({ data }) => {
         className="about-certification-header-wrapper"
         onClick={handleExpand}
       >
-        <h2>{data.title}</h2>
+        <h2>
+          {data.title}{" "}
+          {data.title === "AWS" && awsNotification && (
+            <div className="notification">1</div>
+          )}
+        </h2>
         <div>
           {currentCategory ? (
             <i className="fas fa-minus"></i>

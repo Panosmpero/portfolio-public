@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Social from "./Social";
-import Certification from "./Certification";
+import Social from "../Components/Social";
+import Certification from "../Components/Certification";
 import { about } from "../data/about";
 import { featuredData } from "../data/featured";
 import { certificationsData } from "../data/certifications";

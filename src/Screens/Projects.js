@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { data } from "../data/all";
-import Loading from "./Loading";
+import Loading from "../Components/Loading";
 
 const Projects = () => {
   const [loading, setLoading] = useState(true);
