@@ -2740,6 +2740,61 @@ button {
           justify-content: center;
 }
 
+.about-certifications-container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70%;
+  min-width: 300px;
+  margin: 2rem 0;
+}
+
+.about-certification-container {
+  padding: 1rem 2rem;
+  -webkit-box-shadow: 0 0 10px 1px var(--main);
+          box-shadow: 0 0 10px 1px var(--main);
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.about-certification-header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.about-certification-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.about-certification-wrapper:hover {
+  color: var(--light);
+}
+
+.about-certification-wrapper div:nth-child(1) {
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.about-certification-wrapper div:nth-child(3) {
+  color: red;
+  margin-left: auto;
+}
+
 .about-cv {
   margin: 5rem 0;
   text-align: center;

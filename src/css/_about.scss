@@ -32,6 +32,48 @@
     justify-content: center;
   }
 }
+.about-certifications-container {
+  align-self: center;  
+  width: 70%;
+  min-width: 300px;
+  margin: 2rem 0;
+}
+
+.about-certification-container {
+  padding: 1rem 2rem;
+  box-shadow: 0 0 10px 1px $main;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.about-certification-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.about-certification-wrapper {
+  display: flex;
+  margin-top: 1rem;
+
+  &:hover {
+    color: $light;
+  }
+
+  div {
+    &:nth-child(1) {
+      min-width: 40px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+
+    &:nth-child(3) {
+      color: red;
+      margin-left: auto;
+    }
+  }
+}
 
 .about-cv {
   margin: 5rem 0;
