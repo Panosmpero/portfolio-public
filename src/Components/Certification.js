@@ -26,8 +26,8 @@ const Certification = ({ data }) => {
       </div>
       <div className="about-certification-main-wrapper">
         {currentCategory &&
-          data.certifications.map((certification) => (
-            <div className="about-certification-wrapper">
+          data.certifications.map((certification, id) => (
+            <div className="about-certification-wrapper" key={id}>
               <div>
                 <i className={certification.icon}></i>
               </div>

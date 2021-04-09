@@ -7,8 +7,6 @@ import { certificationsData } from "../data/certifications";
 
 const About = () => {
   const [text, setText] = useState(about);
-  const [fccOpen, setFccOpen] = useState(true);
-  const [awsOpen, setAwsOpen] = useState(false);
 
   const handleMarkovChain = () => {
     let markovChain = {};
@@ -58,8 +56,8 @@ const About = () => {
             <article>{text}</article>
           </div>
           <div className="about-certifications-container">
-            {certificationsData.map((data) => (
-              <Certification data={data} />
+            {certificationsData.map((data, id) => (
+              <Certification data={data} key={id}/>
             ))}            
           </div>
           <article className="about-cv">
