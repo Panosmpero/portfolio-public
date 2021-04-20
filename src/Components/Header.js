@@ -26,7 +26,7 @@ const Header = () => {
   // header - footer fixes on scroll
   useEffect(() => {
     window.onscroll = () => {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         Object.assign(document.getElementById("header").style, {
           boxShadow: "0 1px 5px 1px #0a6c75",
           position: "fixed"
