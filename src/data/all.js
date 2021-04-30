@@ -40,6 +40,16 @@ export const data = [
   },
   {
     id: uuidv4(),
+    title: "Fakebook",
+    technologies: ["react", "senmatic-ui", "graphql", "apollo", "mongodb", "heroku"],
+    url: "https://bero-fakebook.netlify.app/",
+    giturl: "https://github.com/Panosmpero/fakebook-server",
+    img: "/img/fakebook.webp",
+    backend: true,
+    frontend: true
+  },
+  {
+    id: uuidv4(),
     title: "E-commerce",
     technologies: ["react" , "sass", "styled-components"],
     url: "https://react-first-test-hooks.netlify.app",
