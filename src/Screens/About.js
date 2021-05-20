@@ -4,6 +4,7 @@ import Certification from "../Components/Certification";
 import { about } from "../data/about";
 import { featuredData } from "../data/featured";
 import { certificationsData } from "../data/certifications";
+import Carousel from "../Components/Carousel"
 
 const About = () => {
   const [text, setText] = useState(about);
@@ -55,6 +56,7 @@ const About = () => {
           <div className="about-text">
             <article>{text}</article>
           </div>
+          <Carousel />
           <div className="about-certifications-container">
             {certificationsData.map((data, id) => (
               <Certification data={data} key={id}/>
