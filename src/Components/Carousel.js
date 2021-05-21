@@ -10,8 +10,8 @@ const Carousel = () => {
     <CarouselContainer>
       <CarouselWrapper>
         {techs.map(({ src, name, url }, idx) => (
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            <CarouselFigure key={idx} deg={idx * (360 / techs.length)}>
+          <a href={url} target="_blank" rel="noopener noreferrer" key={idx}>
+            <CarouselFigure deg={idx * (360 / techs.length)}>
               <img src={src} alt={name} />
             </CarouselFigure>
           </a>
@@ -38,7 +38,7 @@ const CarouselWrapper = styled.div`
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  animation: rotation 20s infinite linear;
+  animation: rotation 15s infinite linear;
 
   :hover {
     animation-play-state: paused;
@@ -54,12 +54,16 @@ const CarouselWrapper = styled.div`
   }
 `;
 
+const totalPixelLength = 1904;
+const size = Math.floor(totalPixelLength/techs.length);
 const CarouselFigure = styled.figure`
+  // border: 1px black solid;
   display: block;
   position: absolute;
   padding: 2px;
-  width: 60px;
-  height: 60px;
+  width: ${size}px;
+  height: ${size}px;
+  max-height: 100px;
   left: 50%;
   top: 10px;
   overflow: hidden;
@@ -69,15 +73,15 @@ const CarouselFigure = styled.figure`
   transition: all 0.3s ease;
 
   :hover {
-    transform: rotateY(${(props) => props.deg}deg) translateZ(300px) scale(1.1);
+    transform: rotateY(${(props) => props.deg}deg) translate3d(0,-10%,300px) scale(1.2);
   }
 
   img {
     cursor: pointer;
     height: 100%;
     width: 100%;
-    max-height: 60px;
-    max-width: 60px;
+    max-height: ${size-2}px;
+    max-width: ${size-2}px;
   }
 `;
 
