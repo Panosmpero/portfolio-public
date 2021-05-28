@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { data } from "../data/all";
-import Loading from "../Components/Loading";
 import Card from "../Components/Card";
 
 const Projects = () => {
