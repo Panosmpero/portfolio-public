@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import techs from "../data/techs";
+import Loading from "./Loading";
 
 // css based on the link below
 // https://24ways.org/2010/intro-to-css-3d-transforms
 
 const Carousel = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, [700]);
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <CarouselContainer>
+      {loading && <Loading />}
       <CarouselWrapper>
         {techs.map(({ src, name, url }, idx) => (
           <a href={url} target="_blank" rel="noopener noreferrer" key={idx}>
@@ -55,7 +66,7 @@ const CarouselWrapper = styled.div`
 `;
 
 const totalPixelLength = 1904;
-const size = Math.floor(totalPixelLength/techs.length);
+const size = Math.floor(totalPixelLength / techs.length);
 const CarouselFigure = styled.figure`
   // border: 1px black solid;
   display: block;
@@ -73,15 +84,16 @@ const CarouselFigure = styled.figure`
   transition: all 0.3s ease;
 
   :hover {
-    transform: rotateY(${(props) => props.deg}deg) translate3d(0,-10%,300px) scale(1.2);
+    transform: rotateY(${(props) => props.deg}deg) translate3d(0, -10%, 300px)
+      scale(1.2);
   }
 
   img {
     cursor: pointer;
     height: 100%;
     width: 100%;
-    max-height: ${size-2}px;
-    max-width: ${size-2}px;
+    max-height: ${size - 2}px;
+    max-width: ${size - 2}px;
   }
 `;
 

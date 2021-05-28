@@ -1,35 +1,52 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { featuredData } from "../data/featured";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Featured = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
+
   return (
     <section className="featured-container">
       <div className="featured-wrapper">
-
         <div className="featured-title">
           <h2>Featured Projects</h2>
           <div className="underline"></div>
-        </div>        
+        </div>
         <div className="featured-projects-container">
-
-          {featuredData.map((project) => {
+          {featuredData.map((project, idx) => {
             return (
               <article className="featured-project" key={project.id}>
-                <div className="featured-project-img">
-                  <img src={project.img} alt="project" />
+                <div
+                  className="featured-project-img"
+                  data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"}
+                >
+                  <LazyLoadImage
+                    src={project.img}
+                    alt="project"
+                    effect="blur"
+                    height="100%"
+                  />
                 </div>
-                <div className="featured-project-wrapper">
+                <div
+                  className="featured-project-wrapper"
+                  data-aos={idx % 2 === 0 ? "flip-right" : "flip-left"}
+                >
                   <h3 className="featured-project-title">{project.title}</h3>
                   <div className="underline"></div>
                   <p className="featured-project-info">{project.info}</p>
                   <div className="featured-project-footer">
                     <div className="featured-project-tech">
-
                       {project.technologies.map((tech, i) => {
                         return <div key={`tech-${i}`}>{tech}</div>;
                       })}
-
                     </div>
 
                     <div className="featured-project-links">
@@ -59,7 +76,6 @@ const Featured = () => {
               </article>
             );
           })}
-          
         </div>
 
         <div className="featured-footer">
@@ -69,7 +85,6 @@ const Featured = () => {
             </button>
           </Link>
         </div>
-
       </div>
     </section>
   );

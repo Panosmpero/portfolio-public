@@ -1,32 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import Sidebar from "./Sidebar";
-import { data } from "../data/all"
 
 const Header = () => {
   const [darkTheme, setDarkTheme] = useState(false);
   const [show, setShow] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-       // Preloads '/projects' images
-      (function preloadProjects() {
-        let images = []
-        data.forEach((proj, i) => {
-          images[i] = new Image()
-          images[i].src = proj.img
-        })
-      })()
-
-    }, 2000);
-    return () => clearTimeout(timer)
-  }, [])
-
-
   // header - footer fixes on scroll
   useEffect(() => {
     window.onscroll = () => {
-      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+      if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
         Object.assign(document.getElementById("header").style, {
           boxShadow: "0 1px 5px 1px #0a6c75",
           position: "fixed"
