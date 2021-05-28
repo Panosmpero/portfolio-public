@@ -2068,13 +2068,13 @@ button {
   position: relative;
   -ms-grid-column-align: center;
       justify-self: center;
+  width: 100%;
   max-width: 500px;
   height: 300px;
 }
 
 .card {
   height: 100%;
-  width: 100%;
   position: relative;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
@@ -2111,11 +2111,10 @@ button {
   position: relative;
 }
 
-.front img {
-  width: 100%;
+.front .img-container {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  overflow: hidden;
+  z-index: -10;
 }
 
 .card-title {
@@ -2138,6 +2137,7 @@ button {
           justify-content: flex-end;
   -webkit-clip-path: polygon(0 80%, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 80%, 100% 0, 100% 100%, 0% 100%);
+  z-index: 1;
 }
 
 .card-title .underline {

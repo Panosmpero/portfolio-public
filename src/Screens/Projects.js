@@ -1,20 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { data } from "../data/all";
 import Loading from "../Components/Loading";
+import Card from "../Components/Card";
 
 const Projects = () => {
-  const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState(data);
   const [keywords, setKeywords] = useState([]);
   const [sort, setSort] = useState();
-  const [showFilters, setShowFilters] = useState(false)
-
-  // fake back-end api call :D
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 500);
-  }, []);
+  const [showFilters, setShowFilters] = useState(false);
 
   // extract all techs
   const techs = [
@@ -60,18 +53,21 @@ const Projects = () => {
     setProjects(newProjects);
   }, [keywords, sort]);
 
-  return loading ? (
-    <Loading />
-  ) : (
+  return (
     <div className="projects">
-
       <div className="filter-btn" onClick={() => setShowFilters(!showFilters)}>
         <h3>Filters</h3>
         <i className="fas fa-sliders-h"></i>
       </div>
 
-      <div className={`projects-filters-container ${showFilters ? "show-container" : null}`}>
-        <div className={`projects-filters ${showFilters ? "show-filters" : null}`}>
+      <div
+        className={`projects-filters-container ${
+          showFilters ? "show-container" : null
+        }`}
+      >
+        <div
+          className={`projects-filters ${showFilters ? "show-filters" : null}`}
+        >
           <h2 className="projects-filters-header">
             Total: {projects && projects.length}{" "}
             <div className="underline"></div>{" "}
@@ -124,46 +120,8 @@ const Projects = () => {
       </div>
 
       <div className="grid-container">
-        {projects.map((project) => (
-          <div className="card-container" key={`proj-${project.id}`}>
-            <div className="card">
-              <div className="side front">
-                <div className="card-title">
-                  <h2>{project.title}</h2>
-                  <div className="underline"></div>
-                </div>
-                <img src={project.img} alt="project" />
-              </div>
-              <div className="side back">
-                <div className="back-container">
-                  <div className="back-top featured-project-tech">
-                    {project.technologies.map((x, i) => (
-                      <div key={`tec-${i}`}>{x}</div>
-                    ))}
-                  </div>
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn--white"
-                  >
-                    goto link
-                  </a>
-                  {project.giturl && (
-                    <a
-                      href={project.giturl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="card-git"
-                    >
-                      <span>{"<"} </span>
-                      <i className="fab fa-github"></i> <span> {"/>"}</span>
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
+        {projects.map((project, idx) => (
+          <Card key={`card-${idx}`} {...project} />
         ))}
       </div>
     </div>
