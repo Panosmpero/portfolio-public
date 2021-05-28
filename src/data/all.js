@@ -6,7 +6,7 @@ export const data = [
     title: "Love Hemp Health",
     technologies: ["Wordpress"],
     url: "http://lovehemphealth.store/",
-    img: "/img/lovehemphealth.webp",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/lovehemphealth.webp",
     backend: true,
     frontend: true
   },
@@ -15,7 +15,7 @@ export const data = [
     title: "Breakout",
     technologies: ["Wordpress"],
     url: "https://www.breakout.gr/",
-    img: "/img/breakout.webp",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/breakout.webp",
     backend: true,
     frontend: true
   },
@@ -24,7 +24,7 @@ export const data = [
     title: "AnimaTexniki",
     technologies: ["Joomla"],
     url: "https://animatexniki.gr/",
-    img: "/img/animatexniki.webp",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/animatexniki.webp",
     backend: true,
     frontend: true
   },
@@ -34,7 +34,7 @@ export const data = [
     technologies: ["react", "material-UI", "React-charts-2", "Leaflet", "sass", "firebase"],
     url: "https://beros-covid-tracker.web.app",
     giturl: "https://github.com/Panosmpero/COVID-19-Tracker",
-    img: "/img/covid_tracker.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/covid_tracker.png",
     backend: false,
     frontend: true
   },
@@ -44,7 +44,7 @@ export const data = [
     technologies: ["react", "senmatic-ui", "graphql", "apollo", "mongodb", "heroku"],
     url: "https://bero-fakebook.netlify.app/",
     giturl: "https://github.com/Panosmpero/fakebook-server",
-    img: "/img/fakebook.webp",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/fakebook.webp",
     backend: true,
     frontend: true
   },
@@ -54,7 +54,7 @@ export const data = [
     technologies: ["react" , "sass", "styled-components"],
     url: "https://react-first-test-hooks.netlify.app",
     giturl: "https://github.com/Panosmpero/react-test-store",
-    img: "/img/e-commerce.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/e-commerce.png",
     backend: false,
     frontend: true
   },
@@ -64,7 +64,7 @@ export const data = [
     technologies: ["react", "redux", "sass", "chart.js", "node.js", "MySQL", "heroku"],
     url: "https://birdie-observations-tracker.netlify.app/",
     giturl: "https://github.com/Panosmpero/birdie-observations-tracker",
-    img: "/img/birdie_technical_test.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/birdie_technical_test.png",
     backend: true,
     frontend: true
   },
@@ -74,7 +74,7 @@ export const data = [
     technologies: ["react", "redux", "sass", "node.js", "mongodb", "heroku"],
     url: "https://bero-amazon-clone.herokuapp.com/",
     giturl: "https://github.com/Panosmpero/amazon-clone",
-    img: "/img/amazon_clone.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/amazon_clone.png",
     backend: true,
     frontend: true
   },
@@ -84,7 +84,7 @@ export const data = [
     technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/VwvxRjj",
     giturl: "",
-    img: "/img/choropleth_map.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/choropleth_map.png",
     backend: false,
     frontend: true
   },
@@ -94,7 +94,7 @@ export const data = [
     technologies: ["node.js", "express", "mongodb", "mocha.js", "chai.js"],
     url: "https://beros-message-board.glitch.me/",
     giturl: "https://github.com/Panosmpero/boilerplate-project-messageboard",
-    img: "/img/message_board.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/message_board.png",
     backend: true,
     frontend: false
   },
@@ -104,7 +104,7 @@ export const data = [
     technologies: ["node.js", "express", "mongodb", "mocha.js", "chai.js"],
     url: "https://beros-stockchecker.glitch.me/",
     giturl: "https://github.com/Panosmpero/boilerplate-project-stockchecker",
-    img: "/img/stock_checker.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/stock_checker.png",
     backend: true,
     frontend: false
   },
@@ -114,7 +114,7 @@ export const data = [
     technologies: ["node.js", "express", "mongodb", "mocha.js", "chai.js"],
     url: "https://beros-project-library.glitch.me/",
     giturl: "https://github.com/Panosmpero/boilerplate-project-library",
-    img: "/img/project_library.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/project_library.png",
     backend: true,
     frontend: false
   },
@@ -124,7 +124,7 @@ export const data = [
     technologies: ["node.js", "express", "mongodb", "mocha.js", "chai.js"],
     url: "https://beros-issue-tracker.glitch.me/",
     giturl: "https://github.com/Panosmpero/boilerplate-project-issuetracker",
-    img: "/img/issue_tracker.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/issue_tracker.png",
     backend: true,
     frontend: false
   },
@@ -134,7 +134,7 @@ export const data = [
     technologies: ["node.js", "express", "mongodb", "mocha.js", "chai.js"],
     url: "https://beros-metric-converter.glitch.me/",
     giturl: "https://github.com/Panosmpero/boilerplate-project-metricimpconverter",
-    img: "/img/units_converter.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/units_converter.png",
     backend: true,
     frontend: false
   },
@@ -144,7 +144,7 @@ export const data = [
     technologies: ["node.js", "express", "mongodb"],
     url: "https://beros-exercise-tracker.glitch.me/",
     giturl: "",
-    img: "/img/exercise_tracker.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/exercise_tracker.png",
     backend: true,
     frontend: false
   },
@@ -154,7 +154,7 @@ export const data = [
     technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/oNjyMYX",
     giturl: "",
-    img: "/img/heatmap.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/heatmap.png",
     backend: false,
     frontend: true
   },
@@ -164,7 +164,7 @@ export const data = [
     technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/QWjrjjV",
     giturl: "",
-    img: "/img/treemap.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/treemap.png",
     backend: false,
     frontend: true
   },
@@ -174,7 +174,7 @@ export const data = [
     technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/VwvXVrz",
     giturl: "",
-    img: "/img/scatter_plot.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/scatter_plot.png",
     backend: false,
     frontend: true
   },
@@ -184,7 +184,7 @@ export const data = [
     technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/zYvdxbK",
     giturl: "",
-    img: "/img/bar_chart.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/bar_chart.png",
     backend: false,
     frontend: true
   },
@@ -194,7 +194,7 @@ export const data = [
     technologies: ["react", "CSS", "D3.js"],
     url: "https://bero-sorting-algorithm.netlify.app/",
     giturl: "https://github.com/Panosmpero/sorting-algorithm",
-    img: "/img/sorting_algo.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/sorting_algo.png",
     backend: false,
     frontend: true
   },
@@ -204,7 +204,7 @@ export const data = [
     technologies: ["react" , "CSS"],
     url: "https://codepen.io/panosmpero/full/RwWjBBm",
     giturl: "",
-    img: "/img/enigma_machine.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/enigma_machine.png",
     backend: false,
     frontend: true
   },
@@ -214,7 +214,7 @@ export const data = [
     technologies: ["react" , "CSS", "styled-components"],
     url: "https://codepen.io/panosmpero/full/GRpmXLz",
     giturl: "",
-    img: "/img/pomodoro.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/pomodoro.png",
     backend: false,
     frontend: true
   },
@@ -224,7 +224,7 @@ export const data = [
     technologies: ["react" , "CSS"],
     url: "https://codepen.io/panosmpero/full/JjYGZNr",
     giturl: "",
-    img: "/img/calculator.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/calculator.png",
     backend: false,
     frontend: true
   },
@@ -234,7 +234,7 @@ export const data = [
     technologies: ["react" , "CSS"],
     url: "https://codepen.io/panosmpero/full/rNOOvjN",
     giturl: "",
-    img: "/img/drum_machine.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/drum_machine.png",
     backend: false,
     frontend: true
   },
@@ -244,7 +244,7 @@ export const data = [
     technologies: ["react" , "CSS"],
     url: "https://codepen.io/panosmpero/full/YzyPVzM",
     giturl: "",
-    img: "/img/markdown.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/markdown.png",
     backend: false,
     frontend: true
   },
@@ -254,7 +254,7 @@ export const data = [
     technologies: ["react" , "CSS"],
     url: "https://codepen.io/panosmpero/full/KKpGzor",
     giturl: "",
-    img: "/img/random_quote.png",
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/random_quote.png",
     backend: false,
     frontend: true
   }  

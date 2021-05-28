@@ -8,7 +8,7 @@ export const featuredData = [
     technologies: ["react", "material-UI", "React-charts-2", "Leaflet", "sass", "firebase"],
     url: "https://beros-covid-tracker.web.app",
     giturl: "https://github.com/Panosmpero/COVID-19-Tracker",
-    img: "/img/covid_tracker.png"
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/covid_tracker.png"
   },
   {
     id: uuidv4(),
@@ -17,7 +17,7 @@ export const featuredData = [
     technologies: ["react", "redux", "sass", "node.js", "mongodb", "heroku"],
     url: "https://bero-amazon-clone.herokuapp.com/",
     giturl: "https://github.com/Panosmpero/amazon-clone",
-    img: "/img/amazon_clone.png"
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/amazon_clone.png"
   },
   {
     id: uuidv4(),
@@ -26,7 +26,7 @@ export const featuredData = [
     technologies: ["react", "javascript" , "sass", "styled-components"],
     url: "https://react-first-test-hooks.netlify.app",
     giturl: "https://github.com/Panosmpero/react-test-store",
-    img: "/img/e-commerce.png"
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/e-commerce.png"
   },
   {
     id: uuidv4(),
@@ -35,6 +35,6 @@ export const featuredData = [
     technologies: ["HTML", "CSS", "D3.js"],
     url: "https://codepen.io/panosmpero/full/VwvxRjj",
     giturl: "",
-    img: "/img/choropleth_map.png"
+    img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/choropleth_map.png"
   }
 ]
