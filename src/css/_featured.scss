@@ -29,6 +29,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-bottom: 5rem;
+  padding: 0 2rem;
 
   &:hover .featured-project-img::after {
     opacity: 0.1;

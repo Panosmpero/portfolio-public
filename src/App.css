@@ -1124,6 +1124,7 @@ button {
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   margin-bottom: 5rem;
+  padding: 0 2rem;
 }
 
 .featured-project:hover .featured-project-img::after {
