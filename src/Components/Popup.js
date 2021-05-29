@@ -17,7 +17,7 @@ const Popup = () => {
 
   return (
     <PopupContainer show={show}>
-      <PromptWrapper>
+      <PromptWrapper show={show}>
         <h1>Leaving Soon?</h1>
         <div className="underline"></div>
         <p>Come say hi at least!</p>
@@ -43,7 +43,7 @@ const PromptWrapper = styled.div`
   padding: 1.5rem;
   border-radius: 10px;
   z-index: 1001;
-  pointer-events: all;
+  pointer-events: ${({ show }) => show ? "all" : "none"};
   text-align: center;
   display: flex;
   flex-direction: column;
