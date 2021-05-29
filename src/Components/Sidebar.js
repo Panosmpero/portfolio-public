@@ -25,7 +25,7 @@ const Sidebar = ({ onClick, show }) => {
   }, [pathname]);
 
   return (
-    <SidebarContainer show={show}>
+    <PopupContainer show={show}>
       <SidebarWrapper show={show} className="sidebar-wrapper">
         <i
           style={{ fontSize: "4rem" }}
@@ -34,11 +34,11 @@ const Sidebar = ({ onClick, show }) => {
         ></i>
         <Navigation />
       </SidebarWrapper>
-    </SidebarContainer>
+    </PopupContainer>
   );
 };
 
-const SidebarContainer = styled.div`
+export const PopupContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;

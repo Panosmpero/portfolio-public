@@ -9,11 +9,13 @@ import Footer from "./Components/Footer";
 import { Route, Switch } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import Default from "./Components/Default"
+import Popup from "./Components/Popup";
 
 function App() {
   return (
     <>
       <Header />
+      <Popup />
       <div className="main">
         <ScrollToTop />
         <Switch>
