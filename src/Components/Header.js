@@ -30,7 +30,7 @@ const Header = () => {
         });
       }
     };
-  });
+  }, []);
 
   // Light / Dark theme
   useEffect(() => {

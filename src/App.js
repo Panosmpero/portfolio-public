@@ -10,12 +10,14 @@ import { Route, Switch } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import Default from "./Components/Default"
 import Popup from "./Components/Popup";
+import ScrollToTopBtn from "./Components/ScrollToTopBtn";
 
 function App() {
   return (
     <>
       <Header />
       <Popup />
+      <ScrollToTopBtn />
       <div className="main">
         <ScrollToTop />
         <Switch>
