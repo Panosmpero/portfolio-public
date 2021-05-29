@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { PopupContainer } from "./Sidebar";
 
 const Popup = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     // https://stackoverflow.com/a/42947505/13266620
