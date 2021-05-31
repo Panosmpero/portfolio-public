@@ -34,7 +34,8 @@ const Card = ({ id, title, img, technologies, url, giturl }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn--white"
-            >
+              aria-label="Check the application's live link."
+              >
               goto link
             </a>
             {giturl && (
@@ -43,7 +44,8 @@ const Card = ({ id, title, img, technologies, url, giturl }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="card-git"
-              >
+                aria-label="Check the application's Github link."
+                >
                 <span>{"<"} </span>
                 <i className="fab fa-github"></i> <span> {"/>"}</span>
               </a>

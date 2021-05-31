@@ -2,6 +2,7 @@
 
 .form-container {
   background-color: $lighter;
+  color: $main;
   height: 100%;
   display: grid;
   place-content: center;
@@ -9,19 +10,24 @@
 
 .form {
   min-width: 35rem;
-  min-height: 40rem;
+  min-height: 45rem;
   background-color: $white;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   box-shadow: 0 5px 15px 5px $dark;
   padding: 1rem;
   margin: 1rem 0;
   position: relative;
 
   h2 {
-    color: $main;
+    align-self: center;
+  }
+
+  label {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
   }
 
   button {
@@ -50,7 +56,7 @@
     margin-bottom: 2.5rem;
     width: 100%;
     max-width: 40rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     border-radius: 1rem;
     border: 2px $main solid;
@@ -59,7 +65,7 @@
     color: $main;
     
     &:focus {
-      box-shadow: 0 0 15px 10px $lighter;
+      box-shadow: 0 0 10px 5px $lighter;
       background-color: $white;
     }
   }

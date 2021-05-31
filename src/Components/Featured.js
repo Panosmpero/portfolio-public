@@ -55,6 +55,7 @@ const Featured = () => {
                           href={project.url}
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label="Check the application's live link."
                         >
                           <i className="fas fa-external-link-alt"></i>{" "}
                         </a>
@@ -65,6 +66,7 @@ const Featured = () => {
                             href={project.giturl}
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label="Check the application's Github link."
                           >
                             <i className="fab fa-github"></i>{" "}
                           </a>

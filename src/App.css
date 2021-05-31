@@ -2435,6 +2435,7 @@ button {
 
 .form-container {
   background-color: var(--lighter);
+  color: var(--main);
   height: 100%;
   display: -ms-grid;
   display: grid;
@@ -2443,7 +2444,7 @@ button {
 
 .form {
   min-width: 35rem;
-  min-height: 40rem;
+  min-height: 45rem;
   background-color: var(--white);
   border-radius: 1rem;
   display: -webkit-box;
@@ -2453,9 +2454,6 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-shadow: 0 5px 15px 5px var(--dark);
           box-shadow: 0 5px 15px 5px var(--dark);
   padding: 1rem;
@@ -2464,7 +2462,15 @@ button {
 }
 
 .form h2 {
-  color: var(--main);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form label {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
 .form button {
@@ -2493,7 +2499,7 @@ button {
   margin-bottom: 2.5rem;
   width: 100%;
   max-width: 40rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   border-radius: 1rem;
   border: 2px var(--main) solid;
@@ -2503,8 +2509,8 @@ button {
 }
 
 .form input:focus, .form textarea:focus {
-  -webkit-box-shadow: 0 0 15px 10px var(--lighter);
-          box-shadow: 0 0 15px 10px var(--lighter);
+  -webkit-box-shadow: 0 0 10px 5px var(--lighter);
+          box-shadow: 0 0 10px 5px var(--lighter);
   background-color: var(--white);
 }
 

@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-header-container">
           <h1>
-            {"panos berovalis".split("").map((letter, i) => (
+            {"Panos Berovalis".split("").map((letter, i) => (
               <span key={i} className="letter-anim">
                 {letter}
               </span>

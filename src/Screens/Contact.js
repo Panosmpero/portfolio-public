@@ -39,34 +39,37 @@ const Contact = () => {
       >
         <h2>get in touch</h2>
         <div className="underline"></div>
+        <label htmlFor="name">Name</label>
         <input
           type="text"
           name="name"
-          placeholder="Name"
+          placeholder="Enter name here..."
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
         />
+        <label htmlFor="email">Email</label>
         <input
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder="Enter email here..."
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+        <label htmlFor="message">Message</label>
         <textarea
           type="text"
           name="message"
-          placeholder="Message"
+          placeholder="Enter message here..."
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
         />
-        <button type="submit">submit</button>
+        <button type="submit">send message</button>
       </form>
     </div>
   );
