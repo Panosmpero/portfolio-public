@@ -41,7 +41,7 @@ export const data = [
   {
     id: uuidv4(),
     title: "Fakebook",
-    technologies: ["react", "senmatic-ui", "graphql", "apollo", "mongodb", "heroku"],
+    technologies: ["react", "semantic-ui", "graphql", "apollo", "mongodb", "heroku"],
     url: "https://bero-fakebook.netlify.app/",
     giturl: "https://github.com/Panosmpero/fakebook-server",
     img: "https://bero-portfolio-bucket.s3.eu-west-2.amazonaws.com/fakebook.webp",
