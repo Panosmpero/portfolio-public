@@ -50,9 +50,12 @@
 
   textarea {
     min-height: 10rem;
+    min-width: 35rem;
+    margin-bottom: auto;
   }
 
   input, textarea {
+    font-family: Dosis sans-serif;
     margin-bottom: 2.5rem;
     width: 100%;
     max-width: 40rem;

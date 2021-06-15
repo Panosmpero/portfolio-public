@@ -3,7 +3,7 @@
 .connect {
   // https://bennettfeely.com/clippy/
   clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
-  min-height: 60vh;  
+  min-height: 60vh;
   position: relative;
   display: grid;
   place-items: center;
@@ -40,7 +40,7 @@
   box-shadow: 0px 0px 100px 50px $dark;
   display: flex;
   flex-direction: column;
-  position: relative;  
+  position: relative;
   color: $main;
 
   h1 {
@@ -58,5 +58,22 @@
 
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+#emu-analytics-link {
+  z-index: 1;
+  position: relative;
+
+  img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 48em) {
+  #emu-analytics-link {
+    img {
+      max-width: 150px;
+    }
   }
 }

@@ -18,7 +18,7 @@
 .featured-title {
   text-align: center;
   margin: 2rem;
-  
+
   h2 {
     font-size: 4rem;
     color: $dark;
@@ -34,14 +34,14 @@
   &:hover .featured-project-img::after {
     opacity: 0.1;
   }
-  
+
   &:nth-child(odd) .featured-project-img {
     grid-column: 1 / span 8;
   }
   &:nth-child(odd) .featured-project-wrapper {
     grid-column: 5 / 13;
   }
-  
+
   &:nth-child(even) .featured-project-img {
     grid-column: 5 / span 8;
   }
@@ -61,8 +61,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;  
-}
+    object-position: top;
+  }
 
   &::after {
     content: "";
@@ -96,7 +96,7 @@
 }
 
 .featured-project-title {
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   color: $dark;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -104,7 +104,7 @@
 
 .featured-project-info {
   font-size: 2rem;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   line-height: 2.5rem;
   color: $dark;
   margin-bottom: 1rem;
@@ -119,17 +119,17 @@
 .featured-project-tech {
   text-transform: uppercase;
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 
   div {
     margin-right: 1rem;
     margin-bottom: 1rem;
-    padding: .8rem;
+    padding: 0.8rem;
     background-color: $lighter;
     color: $main;
     font-weight: 700;
     border-radius: 1rem;
-    transition: .2s ease-out;
+    transition: 0.2s ease-out;
 
     &:hover {
       transform: skewX(-20deg);
@@ -140,12 +140,13 @@
 .featured-project-links {
   display: flex;
   font-size: 3.2rem;
-  transition: .2s ease-out;
+  transition: 0.2s ease-out;
+  align-items: flex-end;
 }
 
 .featured-project-url {
   margin-right: 1.5rem;
-  transition: .2s ease-out;
+  transition: 0.2s ease-out;
 
   &:hover {
     color: $light;
@@ -172,20 +173,19 @@
     padding: 2.5rem;
     font-size: 2rem;
 
-    i{
-      margin-left: .5rem;
+    i {
+      margin-left: 0.5rem;
     }
 
     &:hover {
       i {
-        animation: hover-button .5s infinite;
+        animation: hover-button 0.5s infinite;
       }
     }
   }
 }
 
 @media (max-width: 75em) {
-
   .featured-project-img {
     grid-row: 1/2;
   }
@@ -195,14 +195,13 @@
   }
 
   .featured-project {
-    
     &:nth-child(odd) .featured-project-img {
       grid-column: 1 / 13;
     }
     &:nth-child(odd) .featured-project-wrapper {
       grid-column: 1 / 13;
     }
-    
+
     &:nth-child(even) .featured-project-img {
       grid-column: 1 / 13;
     }

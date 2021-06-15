@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import {Context} from "../Context/context";
 
 const Navigation = () => {
-  const { awsNotification } = useContext(Context);
+  const { awsNotification, emuNotification } = useContext(Context);
   return (
     <>
       <ul className="navigation">
         <li>
           <Link to="/">Home</Link>
+          {emuNotification && <div className="notification">1</div>}
         </li>
         <li>
           <Link to="/about">About</Link>
